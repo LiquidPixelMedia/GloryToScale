@@ -1,0 +1,202 @@
+[gd_scene load_steps=18 format=3 uid="uid://dkxftt02paq3m"]
+
+[ext_resource type="Texture2D" uid="uid://dq05yan0666ty" path="res://Core/Arts/Backgrounds/CommonArts/Bacground2.png" id="1_cbg6w"]
+[ext_resource type="FontFile" uid="uid://biyy12gstr4mi" path="res://Core/Resources/Fonts/Lacquer-Regular.ttf" id="2_11nw0"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/CommonScripts/MusicControlScript.cs" id="3_gusio"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/OptionsWindowSceneScripts/OptionsBackButtonScript.cs" id="4_allgy"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/CommonScripts/FadeControlScript.cs" id="4_dmw6h"]
+
+[sub_resource type="Gradient" id="Gradient_alpov"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ky5il"]
+gradient = SubResource("Gradient_alpov")
+width = 10
+height = 35
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_pawwd"]
+color = Color(0.584314, 0.584314, 0.584314, 1)
+thickness = 20
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sf2wg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_layac"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ngkfo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y0y0r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_upter"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_to383"]
+
+[sub_resource type="Animation" id="Animation_dh748"]
+resource_name = "EmptyAnimation"
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_miwgf"]
+resource_name = "MainMenuAnimation"
+length = 1.5
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fade/FadeColor:color:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Fade/FadeColor:color:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Fade/FadeColor:color:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Fade/FadeColor:color:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8st3k"]
+_data = {
+"EmptyAnimation": SubResource("Animation_dh748"),
+"MainMenuAnimation": SubResource("Animation_miwgf")
+}
+
+[node name="OptionsWindowSceneGUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.537255, 0.537255, 0.537255, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_cbg6w")
+expand_mode = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="OptionsLabel" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_11nw0")
+theme_override_font_sizes/font_size = 150
+text = "Options"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Spacer1" type="Control" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="MusicLabel" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_fonts/font = ExtResource("2_11nw0")
+theme_override_font_sizes/font_size = 75
+text = "MUSIC"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Spacer2" type="Control" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="MusicVolumeSlider" type="HSlider" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+theme_override_constants/center_grabber = 0
+theme_override_icons/grabber = SubResource("GradientTexture2D_ky5il")
+theme_override_icons/grabber_highlight = SubResource("GradientTexture2D_ky5il")
+theme_override_icons/grabber_disabled = SubResource("GradientTexture2D_ky5il")
+theme_override_styles/slider = SubResource("StyleBoxLine_pawwd")
+theme_override_styles/grabber_area = SubResource("StyleBoxEmpty_sf2wg")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxEmpty_layac")
+min_value = -80.0
+max_value = 0.0
+step = 0.1
+script = ExtResource("3_gusio")
+
+[node name="Spacer3" type="Control" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+
+[node name="BackToMenuButton" type="Button" parent="CenterContainer/VBoxContainer" node_paths=PackedStringArray("FadeAnimationPlayer")]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_colors/font_hover_color = Color(0.533333, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 0)
+theme_override_fonts/font = ExtResource("2_11nw0")
+theme_override_font_sizes/font_size = 75
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ngkfo")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_y0y0r")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_upter")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_to383")
+text = "BACK TO MENU"
+script = ExtResource("4_allgy")
+FadeAnimationPlayer = NodePath("../../../Fade/AnimationPlayer")
+
+[node name="Fade" type="Node" parent="."]
+
+[node name="FadeColor" type="ColorRect" parent="Fade"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.301982)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fade" node_paths=PackedStringArray("FadeColor")]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_8st3k")
+}
+script = ExtResource("4_dmw6h")
+FadeColor = NodePath("../FadeColor")
+
+[connection signal="value_changed" from="CenterContainer/VBoxContainer/MusicVolumeSlider" to="CenterContainer/VBoxContainer/MusicVolumeSlider" method="MusicVolumeSliderValueChanged"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/BackToMenuButton" to="CenterContainer/VBoxContainer/BackToMenuButton" method="BackToMenuButtonPressed"]

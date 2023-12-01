@@ -1,0 +1,363 @@
+[gd_scene load_steps=12 format=3 uid="uid://bb11autudry8i"]
+
+[ext_resource type="Texture2D" uid="uid://dq05yan0666ty" path="res://Core/Arts/Backgrounds/CommonArts/Bacground2.png" id="1_num8d"]
+[ext_resource type="FontFile" uid="uid://biyy12gstr4mi" path="res://Core/Resources/Fonts/Lacquer-Regular.ttf" id="2_5tlaq"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/OptionsWindowSceneScripts/OptionsBackButtonScript.cs" id="3_o8yb0"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/CommonScripts/FadeControlScript.cs" id="4_oukt8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wdtt3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0f1g2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hk7tq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yxjpv"]
+
+[sub_resource type="Animation" id="Animation_dh748"]
+resource_name = "EmptyAnimation"
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_miwgf"]
+resource_name = "MainMenuAnimation"
+length = 1.5
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fade/FadeColor:color:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Fade/FadeColor:color:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Fade/FadeColor:color:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Fade/FadeColor:color:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8st3k"]
+_data = {
+"EmptyAnimation": SubResource("Animation_dh748"),
+"MainMenuAnimation": SubResource("Animation_miwgf")
+}
+
+[node name="CreditsWindowSceneGUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.537255, 0.537255, 0.537255, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_num8d")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+anchor_left = 0.154
+anchor_top = 0.042
+anchor_right = 0.846
+anchor_bottom = 0.862
+offset_left = 0.319977
+offset_top = -0.360004
+offset_right = -0.320068
+offset_bottom = 0.039978
+theme_override_constants/separation = 70
+alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_5tlaq")
+theme_override_font_sizes/font_size = 150
+text = "CREDITS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 100
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/CenterContainer"]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="VBoxContainer/HBoxContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_fonts/font = ExtResource("2_5tlaq")
+theme_override_font_sizes/font_size = 65
+text = "Game Designers"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_fonts/font = ExtResource("2_5tlaq")
+theme_override_font_sizes/font_size = 65
+text = "arasaiel"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="VBoxContainer/HBoxContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_fonts/font = ExtResource("2_5tlaq")
+theme_override_font_sizes/font_size = 65
+text = "AsyaBanz"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer2" type="CenterContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/CenterContainer2"]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="VBoxContainer/HBoxContainer/CenterContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_fonts/font = ExtResource("2_5tlaq")
+theme_override_font_sizes/font_size = 65
+text = "Programmers"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer/CenterContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_fonts/font = ExtResource("2_5tlaq")
+theme_override_font_sizes/font_size = 65
+text = "Monorhist"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="VBoxContainer/HBoxContainer/CenterContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_fonts/font = ExtResource("2_5tlaq")
+theme_override_font_sizes/font_size = 65
+text = "Komandir"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer3" type="CenterContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/CenterContainer3"]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="VBoxContainer/HBoxContainer/CenterContainer3/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_fonts/font = ExtResource("2_5tlaq")
+theme_override_font_sizes/font_size = 65
+text = "Artists"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer/CenterContainer3/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_fonts/font = ExtResource("2_5tlaq")
+theme_override_font_sizes/font_size = 65
+text = "Yukawaki"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="VBoxContainer/HBoxContainer/CenterContainer3/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_fonts/font = ExtResource("2_5tlaq")
+theme_override_font_sizes/font_size = 65
+text = "arasaiel"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 100
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer2/CenterContainer"]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="VBoxContainer/HBoxContainer2/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_fonts/font = ExtResource("2_5tlaq")
+theme_override_font_sizes/font_size = 65
+text = "Sound Design"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer2/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_fonts/font = ExtResource("2_5tlaq")
+theme_override_font_sizes/font_size = 65
+text = "George Panov"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer2" type="CenterContainer" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer2/CenterContainer2"]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="VBoxContainer/HBoxContainer2/CenterContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_fonts/font = ExtResource("2_5tlaq")
+theme_override_font_sizes/font_size = 65
+text = "Voice actors"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer2/CenterContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_fonts/font = ExtResource("2_5tlaq")
+theme_override_font_sizes/font_size = 65
+text = "Komandir"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="VBoxContainer/HBoxContainer2/CenterContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_fonts/font = ExtResource("2_5tlaq")
+theme_override_font_sizes/font_size = 65
+text = "Dueliant"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="VBoxContainer/HBoxContainer2/CenterContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_fonts/font = ExtResource("2_5tlaq")
+theme_override_font_sizes/font_size = 65
+text = "George Panov"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer3" type="CenterContainer" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer2/CenterContainer3"]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="VBoxContainer/HBoxContainer2/CenterContainer3/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_fonts/font = ExtResource("2_5tlaq")
+theme_override_font_sizes/font_size = 65
+text = "Writers  "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer2/CenterContainer3/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_fonts/font = ExtResource("2_5tlaq")
+theme_override_font_sizes/font_size = 65
+text = "Asyabanz"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="VBoxContainer/HBoxContainer2/CenterContainer3/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_fonts/font = ExtResource("2_5tlaq")
+theme_override_font_sizes/font_size = 65
+text = "arasaiel"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackToMenuButton" type="Button" parent="." node_paths=PackedStringArray("FadeAnimationPlayer")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.387
+anchor_top = 0.88
+anchor_right = 0.653
+anchor_bottom = 0.963
+offset_left = -0.0400391
+offset_top = -0.400085
+offset_right = -0.760132
+offset_bottom = -0.0400391
+theme_override_colors/font_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_colors/font_hover_color = Color(0.533333, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 0)
+theme_override_fonts/font = ExtResource("2_5tlaq")
+theme_override_font_sizes/font_size = 75
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wdtt3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_0f1g2")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_hk7tq")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yxjpv")
+text = "BACK TO MENU"
+script = ExtResource("3_o8yb0")
+FadeAnimationPlayer = NodePath("../Fade/AnimationPlayer")
+
+[node name="Fade" type="Node" parent="."]
+
+[node name="FadeColor" type="ColorRect" parent="Fade"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fade" node_paths=PackedStringArray("FadeColor")]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_8st3k")
+}
+script = ExtResource("4_oukt8")
+FadeColor = NodePath("../FadeColor")
+
+[connection signal="pressed" from="BackToMenuButton" to="BackToMenuButton" method="BackToMenuButtonPressed"]

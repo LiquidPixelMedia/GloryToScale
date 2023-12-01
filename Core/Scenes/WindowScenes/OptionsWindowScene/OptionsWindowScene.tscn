@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ena18ik6f1tq"]
+
+[ext_resource type="PackedScene" uid="uid://dkxftt02paq3m" path="res://Core/Scenes/WindowScenes/OptionsWindowScene/OptionsWindowSceneGUI.tscn" id="1_y8x2c"]
+
+[node name="OptionsWindowScene" type="Node"]
+
+[node name="GUILayer" type="CanvasLayer" parent="."]
+
+[node name="OptionsWindowSceneGUI" parent="GUILayer" instance=ExtResource("1_y8x2c")]

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cml7bex7g84qe"]
+
+[ext_resource type="PackedScene" uid="uid://d3tqcyeay7vwx" path="res://Core/Scenes/WindowScenes/TutorialWindowScene/TutorialWindowSceneGUI.tscn" id="1_1qhoc"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/TutorialWindowSceneScripts/TutorialWindowSceneScript.cs" id="1_yoaae"]
+
+[node name="TutorialWindowScene" type="Node"]
+script = ExtResource("1_yoaae")
+
+[node name="GUILayer" type="CanvasLayer" parent="."]
+
+[node name="TutorialWindowSceneGUI" parent="GUILayer" instance=ExtResource("1_1qhoc")]

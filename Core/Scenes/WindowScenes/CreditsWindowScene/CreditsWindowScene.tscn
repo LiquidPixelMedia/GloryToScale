@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ca74qt10gng5v"]
+
+[ext_resource type="PackedScene" uid="uid://bb11autudry8i" path="res://CreditsWindowScene/CreditsWindowSceneGUI.tscn" id="1_eywhj"]
+
+[node name="CreditsWindowScene" type="Node"]
+
+[node name="GUILayer" type="CanvasLayer" parent="."]
+
+[node name="CreditsWindowSceneGUI" parent="GUILayer" instance=ExtResource("1_eywhj")]

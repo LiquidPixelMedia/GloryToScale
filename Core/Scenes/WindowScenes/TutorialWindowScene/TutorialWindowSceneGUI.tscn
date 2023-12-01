@@ -1,0 +1,120 @@
+[gd_scene load_steps=9 format=3 uid="uid://d3tqcyeay7vwx"]
+
+[ext_resource type="Texture2D" uid="uid://cvrpo84axoncj" path="res://Core/Arts/Sprites/Tutorial/tutorial.png" id="1_xqxta"]
+[ext_resource type="Texture2D" uid="uid://dpihvnoo2eal5" path="res://Core/Arts/Sprites/Tutorial/tutor_next.png" id="2_gfgm6"]
+[ext_resource type="Texture2D" uid="uid://be3fcqrvqm2g3" path="res://Core/Arts/Sprites/Tutorial/tutor_next_Hover.png" id="3_y0btc"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/TutorialWindowSceneScripts/NextButtonScript.cs" id="4_mcyne"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/CommonScripts/FadeControlScript.cs" id="5_8c4tb"]
+
+[sub_resource type="Animation" id="Animation_dh748"]
+resource_name = "EmptyAnimation"
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_miwgf"]
+resource_name = "MainMenuAnimation"
+length = 1.5
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fade/FadeColor:color:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Fade/FadeColor:color:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Fade/FadeColor:color:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Fade/FadeColor:color:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8st3k"]
+_data = {
+"EmptyAnimation": SubResource("Animation_dh748"),
+"MainMenuAnimation": SubResource("Animation_miwgf")
+}
+
+[node name="TutorialWindowSceneGUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_xqxta")
+
+[node name="NextButton" type="TextureButton" parent="." node_paths=PackedStringArray("FadeAnimationPlayer")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.434
+anchor_top = 0.882
+anchor_right = 0.544
+anchor_bottom = 0.942
+offset_left = -0.280029
+offset_top = 0.439941
+offset_right = -0.480103
+offset_bottom = -0.360046
+focus_mode = 0
+texture_normal = ExtResource("2_gfgm6")
+texture_hover = ExtResource("3_y0btc")
+script = ExtResource("4_mcyne")
+FadeAnimationPlayer = NodePath("../Fade/AnimationPlayer")
+
+[node name="Fade" type="Node" parent="."]
+
+[node name="FadeColor" type="ColorRect" parent="Fade"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.301982)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fade" node_paths=PackedStringArray("FadeColor")]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_8st3k")
+}
+script = ExtResource("5_8c4tb")
+FadeColor = NodePath("../FadeColor")
+
+[connection signal="pressed" from="NextButton" to="NextButton" method="NextButtonPressed"]

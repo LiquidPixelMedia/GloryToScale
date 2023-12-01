@@ -1,0 +1,2505 @@
+[gd_scene load_steps=231 format=3 uid="uid://qji80sdq85ht"]
+
+[ext_resource type="PackedScene" uid="uid://xt0flynuxng5" path="res://Core/Scenes/WindowScenes/GameWindowScene/GameWindowSceneGUI.tscn" id="1_66r21"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/GameScript.cs" id="1_a72kl"]
+[ext_resource type="Texture2D" uid="uid://o8luj6vx8nbh" path="res://Core/Arts/Sprites/Watch/Day1/ImageDay1.png" id="2_h3dog"]
+[ext_resource type="Texture2D" uid="uid://ddoxe357jetg1" path="res://Core/Arts/Sprites/Watch/WatchBack1.png" id="2_lqvf4"]
+[ext_resource type="Texture2D" uid="uid://btfobo37otukf" path="res://Core/Arts/Sprites/Read/ReadBackground.png" id="2_vamln"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/Watch/WatchScript.cs" id="3_b133t"]
+[ext_resource type="Texture2D" uid="uid://dtavn5o6afcom" path="res://Core/Arts/Sprites/Read/ReadBackground2.png" id="3_jbbrn"]
+[ext_resource type="Texture2D" uid="uid://cngwoeyohb8pn" path="res://Core/Arts/Sprites/Read/NewsDay1.png" id="3_vjajj"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/Watch/WatchDay1.cs" id="5_5nwm0"]
+[ext_resource type="Texture2D" uid="uid://cbhopv1x37ohn" path="res://Core/Arts/Sprites/Read/PictureDay1Hover1.png" id="5_p2dml"]
+[ext_resource type="Texture2D" uid="uid://bsqrvamct2a3e" path="res://Core/Arts/Sprites/Watch/Day1/1boyhover.png" id="6_nob5l"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/Read/ReadScript.cs" id="6_wermb"]
+[ext_resource type="Texture2D" uid="uid://v31etjfwxdrb" path="res://Core/Arts/Sprites/Watch/watchBack2.png" id="7_8y4lo"]
+[ext_resource type="Texture2D" uid="uid://b0dkqc4svt5mr" path="res://Core/Arts/Sprites/Read/NotesOpened.png" id="7_o7vce"]
+[ext_resource type="Texture2D" uid="uid://df8lvgr5veelj" path="res://Core/Arts/Sprites/Watch/Day1/1girlhover.png" id="7_yjlad"]
+[ext_resource type="Texture2D" uid="uid://bu3ggllxm6uiq" path="res://Core/Arts/Sprites/Read/Texts/Day1/Toys .png" id="8_nko77"]
+[ext_resource type="Texture2D" uid="uid://jf76lmnjdoeu" path="res://Core/Arts/Sprites/Watch/Day1/1posterhover.png" id="8_uiu2q"]
+[ext_resource type="Texture2D" uid="uid://cyg6cqq6610p8" path="res://Core/Arts/Sprites/Read/Texts/Day1/In our country all goods available to everyone.png" id="9_citmk"]
+[ext_resource type="Texture2D" uid="uid://b2tv4lvr2bjfu" path="res://Core/Arts/Sprites/Watch/Day1/1carhover.png" id="9_nxcye"]
+[ext_resource type="Texture2D" uid="uid://dwjlsvwunoe7f" path="res://Core/Arts/Sprites/Watch/Day2/ImageDay2.png" id="10_nrtjw"]
+[ext_resource type="Texture2D" uid="uid://vwxuprdls7hu" path="res://Core/Arts/Sprites/Read/Texts/Day1/“Not hungry” .png" id="10_up6t6"]
+[ext_resource type="Texture2D" uid="uid://jgi4hnmb3urx" path="res://Core/Arts/Sprites/Watch/Day2/posterGlory.png" id="11_003tm"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/Watch/WatchDay2.cs" id="11_17yut"]
+[ext_resource type="Texture2D" uid="uid://j24qcp5vw6i8" path="res://Core/Arts/Sprites/Watch/NOimages.png" id="11_32gxw"]
+[ext_resource type="Texture2D" uid="uid://bichm4bxckttb" path="res://Core/Arts/Sprites/Watch/Day3/ImageDay3.png" id="11_57tls"]
+[ext_resource type="Texture2D" uid="uid://c4fwc8dbf75d2" path="res://Core/Arts/Sprites/Read/Texts/Day1/Mr. Salesmore’se.png" id="11_v40v3"]
+[ext_resource type="Texture2D" uid="uid://itk7eaote0av" path="res://Core/Arts/Sprites/Watch/Day2/fork.png" id="12_g3tlw"]
+[ext_resource type="Texture2D" uid="uid://dca3itmda05pu" path="res://Core/Arts/Sprites/Read/Texts/Day1/No one.png" id="12_p7b6u"]
+[ext_resource type="Texture2D" uid="uid://co7qb6p3nykqk" path="res://Core/Arts/Sprites/Read/Texts/Day1/Did.png" id="13_w5d68"]
+[ext_resource type="Texture2D" uid="uid://ddr7ywkguluvu" path="res://Core/Arts/Sprites/Watch/Day2/face.png" id="13_y51u8"]
+[ext_resource type="Texture2D" uid="uid://b0j0yx58dfudm" path="res://Core/Arts/Sprites/Watch/Day2/bloom.png" id="14_qb1ix"]
+[ext_resource type="Texture2D" uid="uid://b1nwvl840iylf" path="res://Core/Arts/Sprites/Read/Texts/Day1/Children.png" id="14_vc4ja"]
+[ext_resource type="Texture2D" uid="uid://bewtk7f0muynt" path="res://Core/Arts/Sprites/Read/EscapeButtonNormal.png" id="15_4nkep"]
+[ext_resource type="Texture2D" uid="uid://66e76lds0w1i" path="res://Core/Arts/Sprites/Read/Texts/Day1/Everyone.png" id="15_vw8a2"]
+[ext_resource type="Texture2D" uid="uid://decmxe2ungcr0" path="res://Core/Arts/Sprites/Read/EscapeButtonHover.png" id="16_4hsmw"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/BackToGameMenu.cs" id="16_g7mou"]
+[ext_resource type="Texture2D" uid="uid://cufmjykq0mbse" path="res://Core/Arts/Sprites/Watch/Day3/clone.png" id="16_q1krw"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/Watch/WatchDay3.cs" id="17_f1pn4"]
+[ext_resource type="Texture2D" uid="uid://cuxrc7srocrov" path="res://Core/Arts/Sprites/Watch/Day3/mustacho.png" id="17_l6my1"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/Read/ReadDay1.cs" id="17_sjsbk"]
+[ext_resource type="Texture2D" uid="uid://caycdk01gg88j" path="res://Core/Arts/Sprites/Watch/Day3/policitian.png" id="18_inet3"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/CommonScripts/FadeControlScript.cs" id="19_tdtua"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/Notes/NotesScript.cs" id="22_hknu8"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/Notes/NotesDay1.cs" id="22_kyihk"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/Read/ReadDay2.cs" id="26_cjb0p"]
+[ext_resource type="Texture2D" uid="uid://bma6vleu7nj61" path="res://Core/Arts/Sprites/Read/NewsDay2.png" id="27_d64qn"]
+[ext_resource type="Texture2D" uid="uid://6trgesc82e2k" path="res://Core/Arts/Sprites/Read/PictureDay2Hover2.png" id="28_10xau"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/Read/ReadDay3.cs" id="29_ekgaq"]
+[ext_resource type="Texture2D" uid="uid://wy1wc15hmplg" path="res://Core/Arts/Sprites/Read/NewsDay3.png" id="30_o22ed"]
+[ext_resource type="Texture2D" uid="uid://qxwpypnm01gi" path="res://Core/Arts/Sprites/Read/PictureDay3Hover3.png" id="31_0m3sn"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/Listen/ListenScript.cs" id="33_4h807"]
+[ext_resource type="Texture2D" uid="uid://cutwjqmcjqtyh" path="res://Core/Arts/Sprites/Listen/backListen.png" id="33_220he"]
+[ext_resource type="Texture2D" uid="uid://csvaludvar6te" path="res://Core/Arts/Sprites/Listen/NOrecords.png" id="34_8d8q7"]
+[ext_resource type="Texture2D" uid="uid://bwt7pkn82gt2m" path="res://Core/Arts/Sprites/Listen/Day1/day 1.1 Choose.png" id="35_o3ipl"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/Listen/ListenDay1.cs" id="35_xtb4b"]
+[ext_resource type="Texture2D" uid="uid://ypnavunf6ojv" path="res://Core/Arts/Sprites/Listen/Day1/day 1.2 Choose.png" id="36_8fd88"]
+[ext_resource type="Texture2D" uid="uid://2808jul185oh" path="res://Core/Arts/Sprites/Listen/Day1/day 1.3 Choose.png" id="37_h56r5"]
+[ext_resource type="Texture2D" uid="uid://dbgqvyegv7hg0" path="res://Core/Arts/Sprites/Listen/Day1/day 1.1 hover.png" id="39_57pqq"]
+[ext_resource type="Texture2D" uid="uid://crfxpmh56i10c" path="res://Core/Arts/Sprites/Listen/Day1/day 1.1 picture.png" id="39_sdtsi"]
+[ext_resource type="Texture2D" uid="uid://3258tqyay4dp" path="res://Core/Arts/Sprites/Listen/Day1/day 1.2 hover.png" id="40_5cc7x"]
+[ext_resource type="Texture2D" uid="uid://dobnenwbm5xq6" path="res://Core/Arts/Sprites/Listen/Day1/day 1.2 picture.png" id="40_alux2"]
+[ext_resource type="Texture2D" uid="uid://cgvb5bn0gcfrx" path="res://Core/Arts/Sprites/Listen/Day1/day 1.3 hover.png" id="41_wxq2w"]
+[ext_resource type="Texture2D" uid="uid://dgpo4s3l4vkgf" path="res://Core/Arts/Sprites/Listen/Day1/day 1.3 picture.png" id="41_xcpln"]
+[ext_resource type="VideoStream" path="res://Core/Video/Day1/day-1.1.ogv" id="42_hh002"]
+[ext_resource type="VideoStream" path="res://Core/Video/Day1/day-1.2.ogv" id="43_kvmcx"]
+[ext_resource type="VideoStream" path="res://Core/Video/Day1/day-1.3.ogv" id="44_nqlvy"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/Notes/NotesDay2.cs" id="44_pkdv4"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/Listen/ListenDay2.cs" id="45_d78qb"]
+[ext_resource type="Texture2D" uid="uid://chikeluh7ky1w" path="res://Core/Arts/Sprites/Read/Texts/Day2/The protesters.png" id="45_f7ibh"]
+[ext_resource type="Texture2D" uid="uid://bf05j0lveu115" path="res://Core/Arts/Sprites/Listen/Day2/day 2.1 Choose).png" id="46_3jig8"]
+[ext_resource type="Texture2D" uid="uid://oii8sl3q3v4r" path="res://Core/Arts/Sprites/Read/Texts/Day2/Pitchforks.png" id="46_ng1qk"]
+[ext_resource type="Texture2D" uid="uid://0e3gf74u1yn2" path="res://Core/Arts/Sprites/Listen/Day2/day 2.2 Choose.png" id="47_6h0l3"]
+[ext_resource type="Texture2D" uid="uid://c78w20cv2fj02" path="res://Core/Arts/Sprites/Read/Texts/Day2/Only the dregs.png" id="47_qhm67"]
+[ext_resource type="Texture2D" uid="uid://cye11e2in8lyo" path="res://Core/Arts/Sprites/Read/Texts/Day2/People have almost.png" id="48_c1ver"]
+[ext_resource type="Texture2D" uid="uid://dkwq3nvdrr2in" path="res://Core/Arts/Sprites/Listen/Day2/day 2.3 Choose.png" id="48_usxsl"]
+[ext_resource type="Texture2D" uid="uid://txbi0uppfip8" path="res://Core/Arts/Sprites/Read/Texts/Day2/Dwellers armed.png" id="49_me6mx"]
+[ext_resource type="Texture2D" uid="uid://di72cmbh23tv2" path="res://Core/Arts/Sprites/Listen/Day2/day 2.1 hover.png" id="49_n6621"]
+[ext_resource type="Texture2D" uid="uid://delprwhykp48e" path="res://Core/Arts/Sprites/Listen/Day2/day 2.2 hover.png" id="50_0ige7"]
+[ext_resource type="Texture2D" uid="uid://cjm31d62vmy1f" path="res://Core/Arts/Sprites/Read/Texts/Day2/Only thanks.png" id="50_mhehf"]
+[ext_resource type="Texture2D" uid="uid://ylj7irm060uy" path="res://Core/Arts/Sprites/Read/Texts/Day2/In the hands.png" id="51_qtohh"]
+[ext_resource type="Texture2D" uid="uid://bbfm68h6g6hm5" path="res://Core/Arts/Sprites/Listen/Day2/day 2.3 hover.png" id="51_siqb2"]
+[ext_resource type="Texture2D" uid="uid://dxt7uqsncet2g" path="res://Core/Arts/Sprites/Listen/Day2/day 2.1 picture.png" id="52_jv85v"]
+[ext_resource type="Texture2D" uid="uid://exe5yvdjxrd4" path="res://Core/Arts/Sprites/Read/Texts/Day2/Knowledge.png" id="52_uhf7k"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/Notes/NotesDay3.cs" id="53_8q0ts"]
+[ext_resource type="Texture2D" uid="uid://c5thju6o3h58o" path="res://Core/Arts/Sprites/Listen/Day2/day 2.2 picture.png" id="53_a861w"]
+[ext_resource type="Texture2D" uid="uid://dn3wjp1sk81ct" path="res://Core/Arts/Sprites/Read/Texts/Day3/And why.png" id="54_svvbd"]
+[ext_resource type="Texture2D" uid="uid://bqrp4j2605tt0" path="res://Core/Arts/Sprites/Listen/Day2/day 2.3 picture.png" id="54_uv4on"]
+[ext_resource type="Texture2D" uid="uid://bp103gfirosd4" path="res://Core/Arts/Sprites/Read/Texts/Day3/What a relief.png" id="55_a0sym"]
+[ext_resource type="VideoStream" path="res://Core/Video/Day2/day-2.1.ogv" id="55_kmf6b"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/Listen/ListenDay3.cs" id="55_ppa1d"]
+[ext_resource type="Texture2D" uid="uid://6vwe7bkeibuw" path="res://Core/Arts/Sprites/Listen/Day3/day 3.1 Choose.png" id="55_u8i8e"]
+[ext_resource type="VideoStream" path="res://Core/Video/Day2/day-2.2.ogv" id="56_0ytfc"]
+[ext_resource type="Texture2D" uid="uid://7s7bq5cwiwk7" path="res://Core/Arts/Sprites/Listen/Day3/day 3.2 Choose.png" id="56_8nels"]
+[ext_resource type="Texture2D" uid="uid://dunif32qv47v3" path="res://Core/Arts/Sprites/Read/Texts/Day3/Thanks to Mr.Overseer.png" id="56_ix18k"]
+[ext_resource type="VideoStream" path="res://Core/Video/Day2/day-2.3.ogv" id="57_54upd"]
+[ext_resource type="Texture2D" uid="uid://bk2jg57mhjl8y" path="res://Core/Arts/Sprites/Read/Texts/Day3/Who is being.png" id="57_i3ms5"]
+[ext_resource type="Texture2D" uid="uid://l4rsi3kxa6ps" path="res://Core/Arts/Sprites/Listen/Day3/day 3.3 Choose.png" id="57_pv0qo"]
+[ext_resource type="Texture2D" uid="uid://brb3ckhu8g6s1" path="res://Core/Arts/Sprites/Listen/Day3/day 3.1 hover.png" id="58_7iea2"]
+[ext_resource type="Texture2D" uid="uid://p7ap4ga4hsb6" path="res://Core/Arts/Sprites/Read/Texts/Day3/Looks like.png" id="58_v73hx"]
+[ext_resource type="Texture2D" uid="uid://jleh6fhgf3dc" path="res://Core/Arts/Sprites/Read/Texts/Day3/This mustache.png" id="59_8qlum"]
+[ext_resource type="Texture2D" uid="uid://ruuf0jfns024" path="res://Core/Arts/Sprites/Listen/Day3/day 3.2 hover.png" id="59_rt6t4"]
+[ext_resource type="Texture2D" uid="uid://bkg0cmpfhcj7f" path="res://Core/Arts/Sprites/Listen/Day3/day 3.3 hover.png" id="60_2aleu"]
+[ext_resource type="Texture2D" uid="uid://b4uewa7h5hj0y" path="res://Core/Arts/Sprites/Read/Texts/Day3/Maybe only mustachioed.png" id="60_tjd65"]
+[ext_resource type="Texture2D" uid="uid://bv5rpgvndf48w" path="res://Core/Arts/Sprites/Read/Texts/Day3/What is a politician.png" id="61_2sqc1"]
+[ext_resource type="Texture2D" uid="uid://dxd4dc4epenlu" path="res://Core/Arts/Sprites/Listen/Day3/day 3.1 picture.png" id="61_3fa6y"]
+[ext_resource type="Texture2D" uid="uid://d3t7w2ro3m2th" path="res://Core/Arts/Sprites/Listen/Day3/day 3.2 picture.png" id="62_ap0td"]
+[ext_resource type="Texture2D" uid="uid://hth6p5uw7kik" path="res://Core/Arts/Sprites/Listen/Day3/day 3.3 picture.png" id="63_6btk3"]
+[ext_resource type="Texture2D" uid="uid://blo6bc42jd21g" path="res://Core/Arts/Sprites/Write/NewsToday.png" id="67_q11a4"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/Write/WriteScript.cs" id="67_s640w"]
+[ext_resource type="VideoStream" path="res://Core/Video/Day3/day-3.1.ogv" id="68_87f8x"]
+[ext_resource type="Texture2D" uid="uid://c2sve0p7dv7x8" path="res://Core/Arts/Sprites/Write/choose5P.png" id="68_cimd5"]
+[ext_resource type="VideoStream" path="res://Core/Video/Day3/day-3.2.ogv" id="69_31vws"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/Write/WriteDay1.cs" id="70_iyy8x"]
+[ext_resource type="VideoStream" path="res://Core/Video/Day3/day-3.3.ogv" id="70_rlbbn"]
+[ext_resource type="Texture2D" uid="uid://crgg3oea0vtfu" path="res://Core/Arts/Sprites/Write/CheckBox.png" id="77_l0tg7"]
+[ext_resource type="Texture2D" uid="uid://bqfrkc3pgqon6" path="res://Core/Arts/Sprites/Write/Day1/ForDay1.png" id="80_rm41s"]
+[ext_resource type="Texture2D" uid="uid://chpa03r3lno8m" path="res://Core/Arts/Sprites/Write/Day1/againstDay1.png" id="81_fqobh"]
+[ext_resource type="Texture2D" uid="uid://chbvylj6ickpr" path="res://Core/Arts/Sprites/Write/wtiteNote.png" id="82_iupp0"]
+[ext_resource type="Texture2D" uid="uid://dceuifoxg8w0y" path="res://Core/Arts/Sprites/Write/writeNoteHover.png" id="83_aj3wb"]
+[ext_resource type="Texture2D" uid="uid://d1mussog68i8e" path="res://Core/Arts/Sprites/Write/publish.png" id="92_ojre0"]
+[ext_resource type="Texture2D" uid="uid://d0ignrvx4l4cn" path="res://Core/Arts/Sprites/Write/publishHover.png" id="93_xybae"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/Write/WriteDay2.cs" id="94_2oatw"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/Write/HeartsScript.cs" id="94_n7haq"]
+[ext_resource type="Texture2D" uid="uid://do1xaxa0nm7ji" path="res://Core/Arts/Sprites/Heart/blackBack.png" id="95_vtgb4"]
+[ext_resource type="Texture2D" uid="uid://dx28jww2e8uv6" path="res://Core/Arts/Sprites/Heart/HeartAnim-1.png" id="96_fnpyg"]
+[ext_resource type="Texture2D" uid="uid://d0efea7747b7" path="res://Core/Arts/Sprites/Heart/HeartAnim-10.png" id="97_mnnvl"]
+[ext_resource type="Texture2D" uid="uid://xchwgobeb15c" path="res://Core/Arts/Sprites/Heart/HeartAnim-2.png" id="98_s4y7h"]
+[ext_resource type="Texture2D" uid="uid://b0uavej6skw0e" path="res://Core/Arts/Sprites/Heart/HeartAnim-3.png" id="99_gxoo0"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/WriteButtonScript.cs" id="100_77foc"]
+[ext_resource type="Texture2D" uid="uid://buyomj4dnv6w6" path="res://Core/Arts/Sprites/Heart/HeartAnim-4.png" id="100_cfwa6"]
+[ext_resource type="Texture2D" uid="uid://cncsth0as8cty" path="res://Core/Arts/Sprites/Heart/HeartAnim-5.png" id="101_b1fna"]
+[ext_resource type="Texture2D" uid="uid://dsxtwrx5vhpse" path="res://Core/Arts/Sprites/Heart/HeartAnim-6.png" id="102_bqp5t"]
+[ext_resource type="Texture2D" uid="uid://dsufahcfvjty4" path="res://Core/Arts/Sprites/Heart/HeartAnim-7.png" id="103_kq2i5"]
+[ext_resource type="Texture2D" uid="uid://cfgl6ac5nm68l" path="res://Core/Arts/Sprites/Write/Day2/forDay2.png" id="103_lhtd0"]
+[ext_resource type="Texture2D" uid="uid://cvdxhrx4w4wvn" path="res://Core/Arts/Sprites/Heart/HeartAnim-8.png" id="104_hrtpn"]
+[ext_resource type="Texture2D" uid="uid://4fqllgr01jjg" path="res://Core/Arts/Sprites/Write/Day2/againstDay2.png" id="104_tswrw"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/Write/WriteDay3.cs" id="105_dk65a"]
+[ext_resource type="Texture2D" uid="uid://dxbuxih2bd1n5" path="res://Core/Arts/Sprites/Heart/HeartAnim-9.png" id="105_edygq"]
+[ext_resource type="Texture2D" uid="uid://chwpip7h2x6jf" path="res://Core/Arts/Sprites/Heart/next.png" id="106_igh42"]
+[ext_resource type="Texture2D" uid="uid://da2ao8j7cig7k" path="res://Core/Arts/Sprites/Heart/nextHover.png" id="107_e58fp"]
+[ext_resource type="Texture2D" uid="uid://23l2dhmdog8e" path="res://Core/Arts/Sprites/Write/no.png" id="108_bnf1l"]
+[ext_resource type="Texture2D" uid="uid://o7pttqad4aet" path="res://Core/Arts/Sprites/Write/yes.png" id="109_nuaey"]
+[ext_resource type="Texture2D" uid="uid://bhxouis7vhyef" path="res://Core/Arts/Sprites/Write/ready.png" id="111_8r3kx"]
+[ext_resource type="Texture2D" uid="uid://d0tdq5vlailqy" path="res://Core/Arts/Sprites/Write/Day3/forDay3.png" id="114_ygh7o"]
+[ext_resource type="Texture2D" uid="uid://ydlugded80cu" path="res://Core/Arts/Sprites/Write/Day3/againstDay3.png" id="115_jlsfn"]
+[ext_resource type="Texture2D" uid="uid://bbt3g6uthxmf7" path="res://Core/Arts/Sprites/Heart/Unanimity.png" id="121_8ptnl"]
+[ext_resource type="Texture2D" uid="uid://7wg2wqomf1x3" path="res://Core/Arts/Sprites/Heart/Nothing.png" id="121_a6ncb"]
+[ext_resource type="Texture2D" uid="uid://bud01eff1ornl" path="res://Core/Arts/Sprites/Days/day1.png" id="145_w5hx0"]
+[ext_resource type="Texture2D" uid="uid://cstliamqx3vxc" path="res://Core/Arts/Sprites/Days/day2.png" id="146_qcn4u"]
+[ext_resource type="Texture2D" uid="uid://ygk8sgl571qd" path="res://Core/Arts/Sprites/Days/day3.png" id="147_l8vfk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_15eux"]
+size = Vector2(171.242, 190.743)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y8sbv"]
+size = Vector2(176.471, 267.882)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aoupw"]
+size = Vector2(88.8889, 133.24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7uywq"]
+size = Vector2(81.0458, 35.063)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_16is3"]
+size = Vector2(181.699, 180.926)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ng84v"]
+size = Vector2(176.471, 517.532)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5f0id"]
+size = Vector2(104.575, 117.812)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lss4r"]
+size = Vector2(160.784, 178.121)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_13voh"]
+size = Vector2(295.385, 272.104)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_blml6"]
+size = Vector2(275.779, 267.896)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mg02x"]
+size = Vector2(121.552, 227.221)
+
+[sub_resource type="Gradient" id="Gradient_yvn8s"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 0.607843)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_o7vr0"]
+gradient = SubResource("Gradient_yvn8s")
+width = 734
+height = 385
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_udlai"]
+size = Vector2(734.4, 385.02)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aivak"]
+size = Vector2(434, 362.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b3jks"]
+size = Vector2(76, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y5v7i"]
+size = Vector2(202, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vi60j"]
+size = Vector2(225, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ytwgc"]
+size = Vector2(114.25, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fmaxe"]
+size = Vector2(629, 332)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jkjdl"]
+size = Vector2(219.5, 35)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cwd0g"]
+size = Vector2(181, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bocj8"]
+size = Vector2(274.25, 36)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1m5yu"]
+size = Vector2(101.5, 35.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hgyag"]
+size = Vector2(692, 431)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ylkg"]
+size = Vector2(155, 29)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pyyre"]
+size = Vector2(254, 34)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jsmr8"]
+size = Vector2(208, 37)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sru1y"]
+size = Vector2(254, 38)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5io23"]
+size = Vector2(232, 37)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4f6eq"]
+size = Vector2(1127, 76)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_np3lw"]
+size = Vector2(1142, 63)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6g0ws"]
+size = Vector2(1153, 74)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_01bab"]
+size = Vector2(1035, 76)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ciao"]
+size = Vector2(1190, 63)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_clrno"]
+size = Vector2(1138, 74)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n43dk"]
+size = Vector2(1119, 76)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gxqdn"]
+size = Vector2(1190, 63)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v31di"]
+size = Vector2(1153, 74)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_oumq6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2m05n"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g6c3b"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_at2b3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l68vm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2ghx6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x53ry"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3bwnp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t0a28"]
+size = Vector2(100, 35)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ntjib"]
+size = Vector2(286, 125)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sv6oh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8wqis"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ixisc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ojtxv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eqtov"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h47se"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fdjod"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yobpr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dlsnx"]
+size = Vector2(100, 35)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vncs"]
+size = Vector2(286, 125)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yfmbh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4c2yp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pdfs8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_oc0bu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wymom"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_aj55v"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eo0ih"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qnpl5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_obo5f"]
+size = Vector2(100, 35)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qo4i1"]
+size = Vector2(286, 125)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sr82a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("96_fnpyg")
+}],
+"loop": false,
+"name": &"Empty",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("97_mnnvl")
+}],
+"loop": true,
+"name": &"Full",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("96_fnpyg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_s4y7h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_gxoo0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_cfwa6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_b1fna")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_bqp5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_kq2i5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_hrtpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_edygq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_mnnvl")
+}],
+"loop": false,
+"name": &"Painting",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qmbnf"]
+size = Vector2(226, 74)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ekyos"]
+size = Vector2(844, 733)
+
+[sub_resource type="Animation" id="Animation_guarx"]
+resource_name = "OpenCloseNotes"
+length = 0.5
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1660, -0.25, 0, 0.25, 0, 1076, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(347, -0.25, 0, 0.25, 0, 347, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5)
+}
+
+[sub_resource type="Animation" id="Animation_fj61q"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1076, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(347, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b3xqe"]
+_data = {
+"OpenCloseNotes": SubResource("Animation_guarx"),
+"RESET": SubResource("Animation_fj61q")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hwqyu"]
+radius = 1.0
+
+[sub_resource type="Animation" id="Animation_lq6lj"]
+resource_name = "DayAnimation"
+length = 2.0
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UpperGUI/Fade/FadeColor:color:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 2)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("UpperGUI/Fade/FadeColor:color:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 2)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("UpperGUI/Fade/FadeColor:color:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 2)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("UpperGUI/Fade/FadeColor:color:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 2)
+}
+
+[sub_resource type="Animation" id="Animation_dh748"]
+resource_name = "EmptyAnimation"
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_miwgf"]
+resource_name = "MainMenuAnimation"
+length = 1.5
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UpperGUI/Fade/FadeColor:color:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("UpperGUI/Fade/FadeColor:color:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("UpperGUI/Fade/FadeColor:color:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("UpperGUI/Fade/FadeColor:color:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8st3k"]
+_data = {
+"DayAnimation": SubResource("Animation_lq6lj"),
+"EmptyAnimation": SubResource("Animation_dh748"),
+"MainMenuAnimation": SubResource("Animation_miwgf")
+}
+
+[node name="GameWindowScene" type="Node" node_paths=PackedStringArray("MouseArea", "FadeAnimationPlayer", "Day1", "Day2", "Day3")]
+script = ExtResource("1_a72kl")
+MouseArea = NodePath("GameLayer/MouseArea")
+FadeAnimationPlayer = NodePath("UpperGUI/Fade/AnimationPlayer")
+Day1 = NodePath("UpperGUI/Day1")
+Day2 = NodePath("UpperGUI/Day2")
+Day3 = NodePath("UpperGUI/Day3")
+
+[node name="GUILayer" type="CanvasLayer" parent="."]
+
+[node name="GameWindowSceneGUI" parent="GUILayer" node_paths=PackedStringArray("Read", "Watch", "Listen", "Write") instance=ExtResource("1_66r21")]
+Read = NodePath("../../GameLayer/Read")
+Watch = NodePath("../../GameLayer/Watch")
+Listen = NodePath("../../GameLayer/Listen")
+Write = NodePath("../../GameLayer/Write")
+
+[node name="GameLayer" type="CanvasLayer" parent="."]
+
+[node name="Watch" type="Node2D" parent="GameLayer" node_paths=PackedStringArray("FadeAnimationPlayer", "PictureNotFound", "UpLeftHover", "UpRightHover", "DownLeftHover", "DownRightHover", "Day1", "Day2", "Day3", "Day1Background", "Day2Background", "Day3Background")]
+visible = false
+script = ExtResource("3_b133t")
+FadeAnimationPlayer = NodePath("../../UpperGUI/Fade/AnimationPlayer")
+PictureNotFound = NodePath("PictureNotFound")
+UpLeftHover = NodePath("UpLeftHover")
+UpRightHover = NodePath("UpRightHover")
+DownLeftHover = NodePath("DownLeftHover")
+DownRightHover = NodePath("DownRightHover")
+Day1 = NodePath("Day1")
+Day2 = NodePath("Day2")
+Day3 = NodePath("Day3")
+Day1Background = NodePath("Day1/Background")
+Day2Background = NodePath("Day2/Background")
+Day3Background = NodePath("Day3/Background")
+
+[node name="Background" type="Sprite2D" parent="GameLayer/Watch"]
+texture = ExtResource("2_lqvf4")
+centered = false
+
+[node name="Day1" type="Node2D" parent="GameLayer/Watch" node_paths=PackedStringArray("BoyHover", "GirlHover", "CarHover", "PosterHover")]
+visible = false
+script = ExtResource("5_5nwm0")
+BoyHover = NodePath("Background/BoyHover")
+GirlHover = NodePath("Background/GirlHover")
+CarHover = NodePath("Background/CarHover")
+PosterHover = NodePath("Background/PosterHover")
+
+[node name="Background" type="Sprite2D" parent="GameLayer/Watch/Day1"]
+position = Vector2(226, 156)
+scale = Vector2(0.765, 0.713)
+texture = ExtResource("2_h3dog")
+centered = false
+
+[node name="BoyHover" type="Sprite2D" parent="GameLayer/Watch/Day1/Background"]
+visible = false
+position = Vector2(210.458, 805.049)
+texture = ExtResource("6_nob5l")
+
+[node name="BoyArea" type="Area2D" parent="GameLayer/Watch/Day1/Background/BoyHover"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Watch/Day1/Background/BoyHover/BoyArea"]
+position = Vector2(3.26797, -1.40253)
+shape = SubResource("RectangleShape2D_15eux")
+
+[node name="GirlHover" type="Sprite2D" parent="GameLayer/Watch/Day1/Background"]
+visible = false
+position = Vector2(1737.25, 918.654)
+texture = ExtResource("7_yjlad")
+
+[node name="GirlArea" type="Area2D" parent="GameLayer/Watch/Day1/Background/GirlHover"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Watch/Day1/Background/GirlHover/GirlArea"]
+position = Vector2(-7.18958, 6.31165)
+shape = SubResource("RectangleShape2D_y8sbv")
+
+[node name="PosterHover" type="Sprite2D" parent="GameLayer/Watch/Day1/Background"]
+visible = false
+position = Vector2(555.556, 580.645)
+texture = ExtResource("8_uiu2q")
+
+[node name="PosterArea" type="Area2D" parent="GameLayer/Watch/Day1/Background/PosterHover"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Watch/Day1/Background/PosterHover/PosterArea"]
+position = Vector2(1.30713, 2.10388)
+shape = SubResource("RectangleShape2D_aoupw")
+
+[node name="CarHover" type="Sprite2D" parent="GameLayer/Watch/Day1/Background"]
+visible = false
+position = Vector2(977.778, 880.786)
+texture = ExtResource("9_nxcye")
+
+[node name="CarArea" type="Area2D" parent="GameLayer/Watch/Day1/Background/CarHover"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Watch/Day1/Background/CarHover/CarArea"]
+position = Vector2(-1.30762, -0.701294)
+shape = SubResource("RectangleShape2D_7uywq")
+
+[node name="Day2" type="Node2D" parent="GameLayer/Watch" node_paths=PackedStringArray("PosterGloryHover", "ForkHover", "FaceHover", "BloomHover")]
+visible = false
+script = ExtResource("11_17yut")
+PosterGloryHover = NodePath("Background/PosterHover")
+ForkHover = NodePath("Background/ForkHover")
+FaceHover = NodePath("Background/FaceHover")
+BloomHover = NodePath("Background/BloomHover")
+
+[node name="Background" type="Sprite2D" parent="GameLayer/Watch/Day2"]
+position = Vector2(226, 156)
+scale = Vector2(0.765, 0.713)
+texture = ExtResource("10_nrtjw")
+centered = false
+
+[node name="PosterHover" type="Sprite2D" parent="GameLayer/Watch/Day2/Background"]
+position = Vector2(266.667, 237.027)
+texture = ExtResource("11_003tm")
+
+[node name="PosterArea" type="Area2D" parent="GameLayer/Watch/Day2/Background/PosterHover"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Watch/Day2/Background/PosterHover/PosterArea"]
+position = Vector2(-4.57507, 11.9213)
+shape = SubResource("RectangleShape2D_16is3")
+
+[node name="ForkHover" type="Sprite2D" parent="GameLayer/Watch/Day2/Background"]
+position = Vector2(1086.27, 796.634)
+texture = ExtResource("12_g3tlw")
+
+[node name="ForkArea" type="Area2D" parent="GameLayer/Watch/Day2/Background/ForkHover"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Watch/Day2/Background/ForkHover/ForkArea"]
+position = Vector2(-1.96106, -2.10376)
+shape = SubResource("RectangleShape2D_ng84v")
+
+[node name="FaceHover" type="Sprite2D" parent="GameLayer/Watch/Day2/Background"]
+position = Vector2(660.131, 573.633)
+texture = ExtResource("13_y51u8")
+
+[node name="FaceArea" type="Area2D" parent="GameLayer/Watch/Day2/Background/FaceHover"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Watch/Day2/Background/FaceHover/FaceArea"]
+position = Vector2(-6.53595, -5.61011)
+shape = SubResource("RectangleShape2D_5f0id")
+
+[node name="BloomHover" type="Sprite2D" parent="GameLayer/Watch/Day2/Background"]
+position = Vector2(1328.1, 821.879)
+texture = ExtResource("14_qb1ix")
+
+[node name="BloomArea" type="Area2D" parent="GameLayer/Watch/Day2/Background/BloomHover"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Watch/Day2/Background/BloomHover/BloomArea"]
+position = Vector2(-7.18933, 13.324)
+shape = SubResource("RectangleShape2D_lss4r")
+
+[node name="Day3" type="Node2D" parent="GameLayer/Watch" node_paths=PackedStringArray("CloneHover", "MustachoHover", "PoliticianHover")]
+visible = false
+script = ExtResource("17_f1pn4")
+CloneHover = NodePath("Background/CloneHover")
+MustachoHover = NodePath("Background/MustachoHover")
+PoliticianHover = NodePath("Background/PoliticianHover")
+
+[node name="Background" type="Sprite2D" parent="GameLayer/Watch/Day3"]
+position = Vector2(226, 156)
+scale = Vector2(0.765104, 0.712963)
+texture = ExtResource("11_57tls")
+centered = false
+
+[node name="CloneHover" type="Sprite2D" parent="GameLayer/Watch/Day3/Background"]
+position = Vector2(1547.5, 847.169)
+texture = ExtResource("16_q1krw")
+
+[node name="CloneArea" type="Area2D" parent="GameLayer/Watch/Day3/Background/CloneHover"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Watch/Day3/Background/CloneHover/CloneArea"]
+position = Vector2(9.14905, 4.20789)
+shape = SubResource("RectangleShape2D_13voh")
+
+[node name="MustachoHover" type="Sprite2D" parent="GameLayer/Watch/Day3/Background"]
+position = Vector2(845.637, 927.117)
+texture = ExtResource("17_l6my1")
+
+[node name="MustachoArea" type="Area2D" parent="GameLayer/Watch/Day3/Background/MustachoHover"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Watch/Day3/Background/MustachoHover/MustachoArea"]
+position = Vector2(-0.653442, 20.3374)
+shape = SubResource("RectangleShape2D_blml6")
+
+[node name="PoliticianHover" type="Sprite2D" parent="GameLayer/Watch/Day3/Background"]
+position = Vector2(126.78, 650.805)
+texture = ExtResource("18_inet3")
+
+[node name="PoliticianArea" type="Area2D" parent="GameLayer/Watch/Day3/Background/PoliticianHover"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Watch/Day3/Background/PoliticianHover/PoliticianArea"]
+position = Vector2(-4.57455, 0)
+shape = SubResource("RectangleShape2D_mg02x")
+
+[node name="UpLeftHover" type="Sprite2D" parent="GameLayer/Watch"]
+visible = false
+position = Vector2(593, 348)
+texture = SubResource("GradientTexture2D_o7vr0")
+
+[node name="UpRightHover" type="Sprite2D" parent="GameLayer/Watch"]
+visible = false
+position = Vector2(1328, 348)
+texture = SubResource("GradientTexture2D_o7vr0")
+
+[node name="DownLeftHover" type="Sprite2D" parent="GameLayer/Watch"]
+visible = false
+position = Vector2(593, 733)
+texture = SubResource("GradientTexture2D_o7vr0")
+
+[node name="DownRightHover" type="Sprite2D" parent="GameLayer/Watch"]
+visible = false
+position = Vector2(1328, 733)
+texture = SubResource("GradientTexture2D_o7vr0")
+
+[node name="UpLeftArea" type="Area2D" parent="GameLayer/Watch"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Watch/UpLeftArea"]
+position = Vector2(593, 348)
+shape = SubResource("RectangleShape2D_udlai")
+
+[node name="UpRightArea" type="Area2D" parent="GameLayer/Watch"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Watch/UpRightArea"]
+position = Vector2(1328, 348)
+shape = SubResource("RectangleShape2D_udlai")
+
+[node name="DownLeftArea" type="Area2D" parent="GameLayer/Watch"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Watch/DownLeftArea"]
+position = Vector2(593, 733)
+shape = SubResource("RectangleShape2D_udlai")
+
+[node name="DownRightArea" type="Area2D" parent="GameLayer/Watch"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Watch/DownRightArea"]
+position = Vector2(1328, 733)
+shape = SubResource("RectangleShape2D_udlai")
+
+[node name="Frame" type="Sprite2D" parent="GameLayer/Watch"]
+texture = ExtResource("7_8y4lo")
+centered = false
+
+[node name="PictureNotFound" type="Sprite2D" parent="GameLayer/Watch"]
+visible = false
+texture = ExtResource("11_32gxw")
+centered = false
+
+[node name="Read" type="Node2D" parent="GameLayer" node_paths=PackedStringArray("FadeAnimationPlayer", "Day1", "Day2", "Day3")]
+visible = false
+script = ExtResource("6_wermb")
+FadeAnimationPlayer = NodePath("../../UpperGUI/Fade/AnimationPlayer")
+Day1 = NodePath("Day1")
+Day2 = NodePath("Day2")
+Day3 = NodePath("Day3")
+
+[node name="Background1" type="Sprite2D" parent="GameLayer/Read"]
+texture = ExtResource("2_vamln")
+centered = false
+
+[node name="Day1" type="Node2D" parent="GameLayer/Read" node_paths=PackedStringArray("NewsPictureSpriteHover")]
+visible = false
+script = ExtResource("17_sjsbk")
+NewsPictureSpriteHover = NodePath("PictureHover")
+
+[node name="NewsPicture" type="Sprite2D" parent="GameLayer/Read/Day1"]
+position = Vector2(370, 0)
+texture = ExtResource("3_vjajj")
+centered = false
+
+[node name="PictureHover" type="Sprite2D" parent="GameLayer/Read/Day1"]
+visible = false
+position = Vector2(1194, 1064)
+texture = ExtResource("5_p2dml")
+
+[node name="PictureArea" type="Area2D" parent="GameLayer/Read/Day1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Read/Day1/PictureArea"]
+position = Vector2(1194, 1063.75)
+shape = SubResource("RectangleShape2D_aivak")
+
+[node name="PriceArea" type="Area2D" parent="GameLayer/Read/Day1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Read/Day1/PriceArea"]
+position = Vector2(544, 1123.5)
+shape = SubResource("RectangleShape2D_b3jks")
+
+[node name="SalesmoreArea" type="Area2D" parent="GameLayer/Read/Day1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Read/Day1/SalesmoreArea"]
+position = Vector2(766, 1197)
+shape = SubResource("RectangleShape2D_y5v7i")
+
+[node name="DistributiusArea" type="Area2D" parent="GameLayer/Read/Day1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Read/Day1/DistributiusArea"]
+position = Vector2(618.5, 1679)
+shape = SubResource("RectangleShape2D_vi60j")
+
+[node name="HungryArea" type="Area2D" parent="GameLayer/Read/Day1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Read/Day1/HungryArea"]
+position = Vector2(1230.88, 1878)
+shape = SubResource("RectangleShape2D_ytwgc")
+
+[node name="Day2" type="Node2D" parent="GameLayer/Read" node_paths=PackedStringArray("NewsPictureSpriteHover")]
+visible = false
+script = ExtResource("26_cjb0p")
+NewsPictureSpriteHover = NodePath("PictureHover")
+
+[node name="NewsPicture" type="Sprite2D" parent="GameLayer/Read/Day2"]
+position = Vector2(370, 0)
+texture = ExtResource("27_d64qn")
+centered = false
+
+[node name="PictureHover" type="Sprite2D" parent="GameLayer/Read/Day2"]
+visible = false
+position = Vector2(951.25, 1434)
+scale = Vector2(1.00079, 1)
+texture = ExtResource("28_10xau")
+
+[node name="PictureArea" type="Area2D" parent="GameLayer/Read/Day2"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Read/Day2/PictureArea"]
+position = Vector2(951.5, 1434)
+shape = SubResource("RectangleShape2D_fmaxe")
+
+[node name="MrKnowledge" type="Area2D" parent="GameLayer/Read/Day2"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Read/Day2/MrKnowledge"]
+position = Vector2(613.25, 990.5)
+shape = SubResource("RectangleShape2D_jkjdl")
+
+[node name="MrLawrule" type="Area2D" parent="GameLayer/Read/Day2"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Read/Day2/MrLawrule"]
+position = Vector2(864.5, 1647.5)
+shape = SubResource("RectangleShape2D_cwd0g")
+
+[node name="ArmedToTheTeeth" type="Area2D" parent="GameLayer/Read/Day2"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Read/Day2/ArmedToTheTeeth"]
+position = Vector2(905.875, 1690)
+shape = SubResource("RectangleShape2D_bocj8")
+
+[node name="Slums" type="Area2D" parent="GameLayer/Read/Day2"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Read/Day2/Slums"]
+position = Vector2(1347, 2260)
+shape = SubResource("RectangleShape2D_1m5yu")
+
+[node name="Day3" type="Node2D" parent="GameLayer/Read" node_paths=PackedStringArray("NewsPictureSpriteHover")]
+visible = false
+script = ExtResource("29_ekgaq")
+NewsPictureSpriteHover = NodePath("PictureHover")
+
+[node name="NewsPicture" type="Sprite2D" parent="GameLayer/Read/Day3"]
+position = Vector2(370, 0)
+texture = ExtResource("30_o22ed")
+centered = false
+
+[node name="PictureHover" type="Sprite2D" parent="GameLayer/Read/Day3"]
+visible = false
+position = Vector2(941, 1361)
+texture = ExtResource("31_0m3sn")
+
+[node name="PictureArea" type="Area2D" parent="GameLayer/Read/Day3"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Read/Day3/PictureArea"]
+position = Vector2(941, 1360.5)
+shape = SubResource("RectangleShape2D_hgyag")
+
+[node name="Sentences" type="Area2D" parent="GameLayer/Read/Day3"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Read/Day3/Sentences"]
+position = Vector2(1118.5, 699.5)
+shape = SubResource("RectangleShape2D_0ylkg")
+
+[node name="MrMustacheous" type="Area2D" parent="GameLayer/Read/Day3"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Read/Day3/MrMustacheous"]
+position = Vector2(973, 1634)
+shape = SubResource("RectangleShape2D_pyyre")
+
+[node name="MrOverseer" type="Area2D" parent="GameLayer/Read/Day3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Read/Day3/MrOverseer"]
+position = Vector2(840, 1710.5)
+shape = SubResource("RectangleShape2D_jsmr8")
+
+[node name="MinistryOfTruth" type="Area2D" parent="GameLayer/Read/Day3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Read/Day3/MinistryOfTruth"]
+position = Vector2(630, 1902)
+shape = SubResource("RectangleShape2D_sru1y")
+
+[node name="MrBloodhound" type="Area2D" parent="GameLayer/Read/Day3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Read/Day3/MrBloodhound"]
+position = Vector2(616, 2450.5)
+shape = SubResource("RectangleShape2D_5io23")
+
+[node name="Background2" type="Sprite2D" parent="GameLayer/Read"]
+texture = ExtResource("3_jbbrn")
+centered = false
+
+[node name="Listen" type="Node2D" parent="GameLayer" node_paths=PackedStringArray("FadeAnimationPlayer", "Day1", "Day2", "Day3", "RecordNotFound")]
+visible = false
+script = ExtResource("33_4h807")
+FadeAnimationPlayer = NodePath("../../UpperGUI/Fade/AnimationPlayer")
+Day1 = NodePath("Day1")
+Day2 = NodePath("Day2")
+Day3 = NodePath("Day3")
+RecordNotFound = NodePath("NoRecords")
+
+[node name="Background" type="Sprite2D" parent="GameLayer/Listen"]
+texture = ExtResource("33_220he")
+centered = false
+
+[node name="Day1" type="Node2D" parent="GameLayer/Listen" node_paths=PackedStringArray("Choice1Video", "Choice2Video", "Choice3Video", "LastFrameChoice1", "LastFrameChoice2", "LastFrameChoice3", "Choice1Hover", "Choice2Hover", "Choice3Hover")]
+visible = false
+script = ExtResource("35_xtb4b")
+Choice1Video = NodePath("Choice1Video")
+Choice2Video = NodePath("Choice2Video")
+Choice3Video = NodePath("Choice3Video")
+LastFrameChoice1 = NodePath("LastFrameChoice1")
+LastFrameChoice2 = NodePath("LastFrameChoice2")
+LastFrameChoice3 = NodePath("LastFrameChoice3")
+Choice1Hover = NodePath("Choise1Hover")
+Choice2Hover = NodePath("Choise2Hover")
+Choice3Hover = NodePath("Choise3Hover")
+
+[node name="Choise1" type="Sprite2D" parent="GameLayer/Listen/Day1"]
+position = Vector2(960, 400)
+texture = ExtResource("35_o3ipl")
+
+[node name="Choice1Area" type="Area2D" parent="GameLayer/Listen/Day1/Choise1"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Listen/Day1/Choise1/Choice1Area"]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_4f6eq")
+
+[node name="Choise2" type="Sprite2D" parent="GameLayer/Listen/Day1"]
+position = Vector2(960, 500)
+texture = ExtResource("36_8fd88")
+
+[node name="Choice2Area" type="Area2D" parent="GameLayer/Listen/Day1/Choise2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Listen/Day1/Choise2/Choice2Area"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_np3lw")
+
+[node name="Choise3" type="Sprite2D" parent="GameLayer/Listen/Day1"]
+position = Vector2(970, 600)
+texture = ExtResource("37_h56r5")
+
+[node name="Choice3Area" type="Area2D" parent="GameLayer/Listen/Day1/Choise3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Listen/Day1/Choise3/Choice3Area"]
+position = Vector2(0.5, -2)
+shape = SubResource("RectangleShape2D_6g0ws")
+
+[node name="Choise1Hover" type="Sprite2D" parent="GameLayer/Listen/Day1"]
+visible = false
+position = Vector2(960, 400)
+texture = ExtResource("39_57pqq")
+
+[node name="Choise2Hover" type="Sprite2D" parent="GameLayer/Listen/Day1"]
+visible = false
+position = Vector2(960, 500)
+texture = ExtResource("40_5cc7x")
+
+[node name="Choise3Hover" type="Sprite2D" parent="GameLayer/Listen/Day1"]
+visible = false
+position = Vector2(970, 600)
+texture = ExtResource("41_wxq2w")
+
+[node name="Choice1Video" type="VideoStreamPlayer" parent="GameLayer/Listen/Day1"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stream = ExtResource("42_hh002")
+bus = &"Videos"
+
+[node name="Choice2Video" type="VideoStreamPlayer" parent="GameLayer/Listen/Day1"]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+stream = ExtResource("43_kvmcx")
+bus = &"Videos"
+
+[node name="Choice3Video" type="VideoStreamPlayer" parent="GameLayer/Listen/Day1"]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+stream = ExtResource("44_nqlvy")
+bus = &"Videos"
+
+[node name="LastFrameChoice1" type="Sprite2D" parent="GameLayer/Listen/Day1"]
+visible = false
+texture = ExtResource("39_sdtsi")
+centered = false
+
+[node name="LastFrameChoice2" type="Sprite2D" parent="GameLayer/Listen/Day1"]
+visible = false
+texture = ExtResource("40_alux2")
+centered = false
+
+[node name="LastFrameChoice3" type="Sprite2D" parent="GameLayer/Listen/Day1"]
+visible = false
+texture = ExtResource("41_xcpln")
+centered = false
+
+[node name="Day2" type="Node2D" parent="GameLayer/Listen" node_paths=PackedStringArray("Choice1Video", "Choice2Video", "Choice3Video", "LastFrameChoice1", "LastFrameChoice2", "LastFrameChoice3", "Choice1Hover", "Choice2Hover", "Choice3Hover")]
+visible = false
+script = ExtResource("45_d78qb")
+Choice1Video = NodePath("Choice1Video")
+Choice2Video = NodePath("Choice2Video")
+Choice3Video = NodePath("Choice3Video")
+LastFrameChoice1 = NodePath("LastFrameChoice1")
+LastFrameChoice2 = NodePath("LastFrameChoice2")
+LastFrameChoice3 = NodePath("LastFrameChoice3")
+Choice1Hover = NodePath("Choise1Hover")
+Choice2Hover = NodePath("Choise2Hover")
+Choice3Hover = NodePath("Choise3Hover")
+
+[node name="Choise1" type="Sprite2D" parent="GameLayer/Listen/Day2"]
+position = Vector2(901, 400)
+texture = ExtResource("46_3jig8")
+
+[node name="Choice1Area" type="Area2D" parent="GameLayer/Listen/Day2/Choise1"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Listen/Day2/Choise1/Choice1Area"]
+position = Vector2(8.5, -1)
+shape = SubResource("RectangleShape2D_01bab")
+
+[node name="Choise2" type="Sprite2D" parent="GameLayer/Listen/Day2"]
+position = Vector2(991, 500)
+texture = ExtResource("47_6h0l3")
+
+[node name="Choice2Area" type="Area2D" parent="GameLayer/Listen/Day2/Choise2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Listen/Day2/Choise2/Choice2Area"]
+position = Vector2(-1, 0.5)
+shape = SubResource("RectangleShape2D_1ciao")
+
+[node name="Choise3" type="Sprite2D" parent="GameLayer/Listen/Day2"]
+position = Vector2(960, 600)
+texture = ExtResource("48_usxsl")
+
+[node name="Choice3Area" type="Area2D" parent="GameLayer/Listen/Day2/Choise3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Listen/Day2/Choise3/Choice3Area"]
+position = Vector2(1, -2)
+shape = SubResource("RectangleShape2D_clrno")
+
+[node name="Choise1Hover" type="Sprite2D" parent="GameLayer/Listen/Day2"]
+visible = false
+position = Vector2(901, 400)
+texture = ExtResource("49_n6621")
+
+[node name="Choise2Hover" type="Sprite2D" parent="GameLayer/Listen/Day2"]
+visible = false
+position = Vector2(991, 500)
+texture = ExtResource("50_0ige7")
+
+[node name="Choise3Hover" type="Sprite2D" parent="GameLayer/Listen/Day2"]
+visible = false
+position = Vector2(960, 600)
+texture = ExtResource("51_siqb2")
+
+[node name="Choice1Video" type="VideoStreamPlayer" parent="GameLayer/Listen/Day2"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stream = ExtResource("55_kmf6b")
+bus = &"Videos"
+
+[node name="Choice2Video" type="VideoStreamPlayer" parent="GameLayer/Listen/Day2"]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+stream = ExtResource("56_0ytfc")
+bus = &"Videos"
+
+[node name="Choice3Video" type="VideoStreamPlayer" parent="GameLayer/Listen/Day2"]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+stream = ExtResource("57_54upd")
+bus = &"Videos"
+
+[node name="LastFrameChoice1" type="Sprite2D" parent="GameLayer/Listen/Day2"]
+visible = false
+texture = ExtResource("52_jv85v")
+centered = false
+
+[node name="LastFrameChoice2" type="Sprite2D" parent="GameLayer/Listen/Day2"]
+visible = false
+texture = ExtResource("53_a861w")
+centered = false
+
+[node name="LastFrameChoice3" type="Sprite2D" parent="GameLayer/Listen/Day2"]
+visible = false
+texture = ExtResource("54_uv4on")
+centered = false
+
+[node name="Day3" type="Node2D" parent="GameLayer/Listen" node_paths=PackedStringArray("Choice1Video", "Choice2Video", "Choice3Video", "LastFrameChoice1", "LastFrameChoice2", "LastFrameChoice3", "Choice1Hover", "Choice2Hover", "Choice3Hover")]
+visible = false
+script = ExtResource("55_ppa1d")
+Choice1Video = NodePath("Choice1Video")
+Choice2Video = NodePath("Choice2Video")
+Choice3Video = NodePath("Choice3Video")
+LastFrameChoice1 = NodePath("LastFrameChoice1")
+LastFrameChoice2 = NodePath("LastFrameChoice2")
+LastFrameChoice3 = NodePath("LastFrameChoice3")
+Choice1Hover = NodePath("Choise1Hover")
+Choice2Hover = NodePath("Choise2Hover")
+Choice3Hover = NodePath("Choise3Hover")
+
+[node name="Choise1" type="Sprite2D" parent="GameLayer/Listen/Day3"]
+position = Vector2(908, 400)
+texture = ExtResource("55_u8i8e")
+
+[node name="Choice1Area" type="Area2D" parent="GameLayer/Listen/Day3/Choise1"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Listen/Day3/Choise1/Choice1Area"]
+position = Vector2(-3.5, -1)
+shape = SubResource("RectangleShape2D_n43dk")
+
+[node name="Choise2" type="Sprite2D" parent="GameLayer/Listen/Day3"]
+position = Vector2(939, 500)
+texture = ExtResource("56_8nels")
+
+[node name="Choice2Area" type="Area2D" parent="GameLayer/Listen/Day3/Choise2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Listen/Day3/Choise2/Choice2Area"]
+position = Vector2(1, 0.5)
+shape = SubResource("RectangleShape2D_gxqdn")
+
+[node name="Choise3" type="Sprite2D" parent="GameLayer/Listen/Day3"]
+position = Vector2(929, 600)
+texture = ExtResource("57_pv0qo")
+
+[node name="Choice3Area" type="Area2D" parent="GameLayer/Listen/Day3/Choise3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Listen/Day3/Choise3/Choice3Area"]
+position = Vector2(0.5, -2)
+shape = SubResource("RectangleShape2D_v31di")
+
+[node name="Choise1Hover" type="Sprite2D" parent="GameLayer/Listen/Day3"]
+visible = false
+position = Vector2(908, 400)
+texture = ExtResource("58_7iea2")
+
+[node name="Choise2Hover" type="Sprite2D" parent="GameLayer/Listen/Day3"]
+visible = false
+position = Vector2(939, 500)
+texture = ExtResource("59_rt6t4")
+
+[node name="Choise3Hover" type="Sprite2D" parent="GameLayer/Listen/Day3"]
+visible = false
+position = Vector2(929, 600)
+texture = ExtResource("60_2aleu")
+
+[node name="Choice1Video" type="VideoStreamPlayer" parent="GameLayer/Listen/Day3"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stream = ExtResource("68_87f8x")
+bus = &"Videos"
+
+[node name="Choice2Video" type="VideoStreamPlayer" parent="GameLayer/Listen/Day3"]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+stream = ExtResource("69_31vws")
+bus = &"Videos"
+
+[node name="Choice3Video" type="VideoStreamPlayer" parent="GameLayer/Listen/Day3"]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+stream = ExtResource("70_rlbbn")
+bus = &"Videos"
+
+[node name="LastFrameChoice1" type="Sprite2D" parent="GameLayer/Listen/Day3"]
+visible = false
+texture = ExtResource("61_3fa6y")
+centered = false
+
+[node name="LastFrameChoice2" type="Sprite2D" parent="GameLayer/Listen/Day3"]
+visible = false
+texture = ExtResource("62_ap0td")
+centered = false
+
+[node name="LastFrameChoice3" type="Sprite2D" parent="GameLayer/Listen/Day3"]
+visible = false
+texture = ExtResource("63_6btk3")
+centered = false
+
+[node name="NoRecords" type="Sprite2D" parent="GameLayer/Listen"]
+visible = false
+texture = ExtResource("34_8d8q7")
+centered = false
+
+[node name="Write" type="Node2D" parent="GameLayer" node_paths=PackedStringArray("FadeAnimationPlayer", "Day1", "Day2", "Day3")]
+visible = false
+script = ExtResource("67_s640w")
+FadeAnimationPlayer = NodePath("../../UpperGUI/Fade/AnimationPlayer")
+Day1 = NodePath("Day1")
+Day2 = NodePath("Day2")
+Day3 = NodePath("Day3")
+
+[node name="Background" type="Sprite2D" parent="GameLayer/Write"]
+texture = ExtResource("67_q11a4")
+centered = false
+
+[node name="Frame" type="Sprite2D" parent="GameLayer/Write"]
+texture = ExtResource("3_jbbrn")
+centered = false
+
+[node name="NotesWithChoice" type="Sprite2D" parent="GameLayer/Write"]
+position = Vector2(1076, 347)
+texture = ExtResource("68_cimd5")
+centered = false
+
+[node name="Day1" type="Node2D" parent="GameLayer/Write" node_paths=PackedStringArray("FadeAnimationPlayer", "TextToysSprite", "TextInOutCountrySprite", "TextNotHungrySprite", "TextSalesmoreSprite", "TextNoOneSprite", "TextDidYouKnowSprite", "TextChildrenSprite", "TextEveryoneSprite", "Choice1CheckBoxSprite", "Choice2CheckBoxSprite", "Choice3CheckBoxSprite", "Choice4CheckBoxSprite", "Choice5CheckBoxSprite", "Choice6CheckBoxSprite", "Choice7CheckBoxSprite", "Choice8CheckBoxSprite", "WriteArticle", "WriteArticleHover", "YesSprite", "NoSprite", "PublishArticleNode2D", "PublishArticle", "PublishArticleHover", "Hearts")]
+visible = false
+script = ExtResource("70_iyy8x")
+FadeAnimationPlayer = NodePath("../../../UpperGUI/Fade/AnimationPlayer")
+TextToysSprite = NodePath("Sprites/ToysText")
+TextInOutCountrySprite = NodePath("Sprites/InOurCountryText")
+TextNotHungrySprite = NodePath("Sprites/NotHungryText")
+TextSalesmoreSprite = NodePath("Sprites/SalesmoreText")
+TextNoOneSprite = NodePath("Sprites/NoOneText")
+TextDidYouKnowSprite = NodePath("Sprites/DidYouKnowText")
+TextChildrenSprite = NodePath("Sprites/ChildrenText")
+TextEveryoneSprite = NodePath("Sprites/EveryoneText")
+Choice1CheckBoxSprite = NodePath("CheckBoxes/Choice1CheckBox")
+Choice2CheckBoxSprite = NodePath("CheckBoxes/Choice2CheckBox")
+Choice3CheckBoxSprite = NodePath("CheckBoxes/Choice3CheckBox")
+Choice4CheckBoxSprite = NodePath("CheckBoxes/Choice4CheckBox")
+Choice5CheckBoxSprite = NodePath("CheckBoxes/Choice5CheckBox")
+Choice6CheckBoxSprite = NodePath("CheckBoxes/Choice6CheckBox")
+Choice7CheckBoxSprite = NodePath("CheckBoxes/Choice7CheckBox")
+Choice8CheckBoxSprite = NodePath("CheckBoxes/Choice8CheckBox")
+WriteArticle = NodePath("WriteArticle")
+WriteArticleHover = NodePath("WriteArticle/WriteArticleHover")
+YesSprite = NodePath("YesSprite")
+NoSprite = NodePath("NoSprite")
+PublishArticleNode2D = NodePath("PublishArticle")
+PublishArticle = NodePath("PublishArticle/PublishArticleNormal")
+PublishArticleHover = NodePath("PublishArticle/PublishArticleHover")
+Hearts = NodePath("../Hearts")
+
+[node name="Sprites" type="Node2D" parent="GameLayer/Write/Day1"]
+
+[node name="ToysText" type="Sprite2D" parent="GameLayer/Write/Day1/Sprites"]
+visible = false
+position = Vector2(1634, 542)
+rotation = 0.0244311
+texture = ExtResource("8_nko77")
+
+[node name="InOurCountryText" type="Sprite2D" parent="GameLayer/Write/Day1/Sprites"]
+visible = false
+position = Vector2(1615, 592)
+rotation = 0.0244311
+texture = ExtResource("9_citmk")
+
+[node name="NotHungryText" type="Sprite2D" parent="GameLayer/Write/Day1/Sprites"]
+visible = false
+position = Vector2(1599, 638)
+rotation = 0.0244311
+texture = ExtResource("10_up6t6")
+
+[node name="SalesmoreText" type="Sprite2D" parent="GameLayer/Write/Day1/Sprites"]
+visible = false
+position = Vector2(1613, 688)
+rotation = 0.0244311
+texture = ExtResource("11_v40v3")
+
+[node name="NoOneText" type="Sprite2D" parent="GameLayer/Write/Day1/Sprites"]
+visible = false
+position = Vector2(1542, 736)
+rotation = 0.0244311
+texture = ExtResource("12_p7b6u")
+
+[node name="DidYouKnowText" type="Sprite2D" parent="GameLayer/Write/Day1/Sprites"]
+visible = false
+position = Vector2(1609, 786)
+rotation = 0.0244311
+texture = ExtResource("13_w5d68")
+
+[node name="ChildrenText" type="Sprite2D" parent="GameLayer/Write/Day1/Sprites"]
+visible = false
+position = Vector2(1627, 837)
+rotation = 0.0244311
+texture = ExtResource("14_vc4ja")
+
+[node name="EveryoneText" type="Sprite2D" parent="GameLayer/Write/Day1/Sprites"]
+visible = false
+position = Vector2(1598, 889)
+rotation = 0.0244311
+texture = ExtResource("15_vw8a2")
+
+[node name="CheckBoxes" type="Node2D" parent="GameLayer/Write/Day1"]
+
+[node name="Choice1CheckBox" type="Sprite2D" parent="GameLayer/Write/Day1/CheckBoxes"]
+visible = false
+position = Vector2(1373, 537)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice1CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day1/CheckBoxes/Choice1CheckBox"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day1/CheckBoxes/Choice1CheckBox/Choice1CheckBoxArea"]
+shape = SubResource("CircleShape2D_oumq6")
+
+[node name="Choice2CheckBox" type="Sprite2D" parent="GameLayer/Write/Day1/CheckBoxes"]
+visible = false
+position = Vector2(1373, 586)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice2CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day1/CheckBoxes/Choice2CheckBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day1/CheckBoxes/Choice2CheckBox/Choice2CheckBoxArea"]
+shape = SubResource("CircleShape2D_2m05n")
+
+[node name="Choice3CheckBox" type="Sprite2D" parent="GameLayer/Write/Day1/CheckBoxes"]
+visible = false
+position = Vector2(1373, 635)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice3CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day1/CheckBoxes/Choice3CheckBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day1/CheckBoxes/Choice3CheckBox/Choice3CheckBoxArea"]
+shape = SubResource("CircleShape2D_g6c3b")
+
+[node name="Choice4CheckBox" type="Sprite2D" parent="GameLayer/Write/Day1/CheckBoxes"]
+visible = false
+position = Vector2(1373, 684)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice4CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day1/CheckBoxes/Choice4CheckBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day1/CheckBoxes/Choice4CheckBox/Choice4CheckBoxArea"]
+shape = SubResource("CircleShape2D_at2b3")
+
+[node name="Choice5CheckBox" type="Sprite2D" parent="GameLayer/Write/Day1/CheckBoxes"]
+visible = false
+position = Vector2(1373, 733)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice5CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day1/CheckBoxes/Choice5CheckBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day1/CheckBoxes/Choice5CheckBox/Choice5CheckBoxArea"]
+shape = SubResource("CircleShape2D_l68vm")
+
+[node name="Choice6CheckBox" type="Sprite2D" parent="GameLayer/Write/Day1/CheckBoxes"]
+visible = false
+position = Vector2(1373, 782)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice6CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day1/CheckBoxes/Choice6CheckBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day1/CheckBoxes/Choice6CheckBox/Choice6CheckBoxArea"]
+shape = SubResource("CircleShape2D_2ghx6")
+
+[node name="Choice7CheckBox" type="Sprite2D" parent="GameLayer/Write/Day1/CheckBoxes"]
+visible = false
+position = Vector2(1373, 831)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice7CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day1/CheckBoxes/Choice7CheckBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day1/CheckBoxes/Choice7CheckBox/Choice7CheckBoxArea"]
+shape = SubResource("CircleShape2D_x53ry")
+
+[node name="Choice8CheckBox" type="Sprite2D" parent="GameLayer/Write/Day1/CheckBoxes"]
+visible = false
+position = Vector2(1373, 885)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice8CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day1/CheckBoxes/Choice8CheckBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day1/CheckBoxes/Choice8CheckBox/Choice8CheckBoxArea"]
+shape = SubResource("CircleShape2D_3bwnp")
+
+[node name="YesSprite" type="Sprite2D" parent="GameLayer/Write/Day1"]
+visible = false
+position = Vector2(475, 228)
+texture = ExtResource("80_rm41s")
+centered = false
+
+[node name="NoSprite" type="Sprite2D" parent="GameLayer/Write/Day1"]
+visible = false
+position = Vector2(475, 228)
+texture = ExtResource("81_fqobh")
+centered = false
+
+[node name="WriteArticle" type="Sprite2D" parent="GameLayer/Write/Day1"]
+visible = false
+position = Vector2(1610, 988)
+texture = ExtResource("82_iupp0")
+
+[node name="WriteArticleHover" type="Sprite2D" parent="GameLayer/Write/Day1/WriteArticle"]
+visible = false
+texture = ExtResource("83_aj3wb")
+
+[node name="WriteArticleArea" type="Area2D" parent="GameLayer/Write/Day1/WriteArticle"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day1/WriteArticle/WriteArticleArea"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_t0a28")
+
+[node name="PublishArticle" type="Node2D" parent="GameLayer/Write/Day1"]
+visible = false
+position = Vector2(-4, 0)
+
+[node name="PublishArticleNormal" type="Sprite2D" parent="GameLayer/Write/Day1/PublishArticle"]
+position = Vector2(203, 992)
+texture = ExtResource("92_ojre0")
+
+[node name="PublishArticleHover" type="Sprite2D" parent="GameLayer/Write/Day1/PublishArticle"]
+visible = false
+position = Vector2(203, 1001)
+texture = ExtResource("93_xybae")
+
+[node name="PublishArticleArea" type="Area2D" parent="GameLayer/Write/Day1/PublishArticle"]
+position = Vector2(203, 992)
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day1/PublishArticle/PublishArticleArea"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_ntjib")
+
+[node name="Day2" type="Node2D" parent="GameLayer/Write" node_paths=PackedStringArray("FadeAnimationPlayer", "TextTheProtestersSprite", "TextPitchforksSprite", "TextOnlyTheDregsSprite", "TextPeopleHaveAlmostSprite", "TextDwellersSprite", "TextOnlyThanksSprite", "TextInTheHandsSprite", "TextKnowledgeSprite", "Choice1CheckBoxSprite", "Choice2CheckBoxSprite", "Choice3CheckBoxSprite", "Choice4CheckBoxSprite", "Choice5CheckBoxSprite", "Choice6CheckBoxSprite", "Choice7CheckBoxSprite", "Choice8CheckBoxSprite", "WriteArticle", "WriteArticleHover", "YesSprite", "NoSprite", "PublishArticleNode2D", "PublishArticle", "PublishArticleHover", "Hearts")]
+visible = false
+script = ExtResource("94_2oatw")
+FadeAnimationPlayer = NodePath("../../../UpperGUI/Fade/AnimationPlayer")
+TextTheProtestersSprite = NodePath("Sprites/TheProtestersText")
+TextPitchforksSprite = NodePath("Sprites/PitchforksText")
+TextOnlyTheDregsSprite = NodePath("Sprites/OnlyTheDregsText")
+TextPeopleHaveAlmostSprite = NodePath("Sprites/PeopleHaveAlmostText")
+TextDwellersSprite = NodePath("Sprites/DwellersText")
+TextOnlyThanksSprite = NodePath("Sprites/OnlyThanksText")
+TextInTheHandsSprite = NodePath("Sprites/InTheHandsText")
+TextKnowledgeSprite = NodePath("Sprites/KnowledgeText")
+Choice1CheckBoxSprite = NodePath("CheckBoxes/Choice1CheckBox")
+Choice2CheckBoxSprite = NodePath("CheckBoxes/Choice2CheckBox")
+Choice3CheckBoxSprite = NodePath("CheckBoxes/Choice3CheckBox")
+Choice4CheckBoxSprite = NodePath("CheckBoxes/Choice4CheckBox")
+Choice5CheckBoxSprite = NodePath("CheckBoxes/Choice5CheckBox")
+Choice6CheckBoxSprite = NodePath("CheckBoxes/Choice6CheckBox")
+Choice7CheckBoxSprite = NodePath("CheckBoxes/Choice7CheckBox")
+Choice8CheckBoxSprite = NodePath("CheckBoxes/Choice8CheckBox")
+WriteArticle = NodePath("WriteArticle")
+WriteArticleHover = NodePath("WriteArticle/WriteArticleHover")
+YesSprite = NodePath("YesSprite")
+NoSprite = NodePath("NoSprite")
+PublishArticleNode2D = NodePath("PublishArticle")
+PublishArticle = NodePath("PublishArticle/PublishArticleNormal")
+PublishArticleHover = NodePath("PublishArticle/PublishArticleHover")
+Hearts = NodePath("../Hearts")
+
+[node name="Sprites" type="Node2D" parent="GameLayer/Write/Day2"]
+
+[node name="TheProtestersText" type="Sprite2D" parent="GameLayer/Write/Day2/Sprites"]
+visible = false
+position = Vector2(1627, 543)
+rotation = 0.0244311
+texture = ExtResource("45_f7ibh")
+
+[node name="PitchforksText" type="Sprite2D" parent="GameLayer/Write/Day2/Sprites"]
+visible = false
+position = Vector2(1616, 593)
+rotation = 0.0244311
+texture = ExtResource("46_ng1qk")
+
+[node name="OnlyTheDregsText" type="Sprite2D" parent="GameLayer/Write/Day2/Sprites"]
+visible = false
+position = Vector2(1646, 639)
+rotation = 0.0244311
+texture = ExtResource("47_qhm67")
+
+[node name="PeopleHaveAlmostText" type="Sprite2D" parent="GameLayer/Write/Day2/Sprites"]
+visible = false
+position = Vector2(1620, 689)
+rotation = 0.0244311
+texture = ExtResource("48_c1ver")
+
+[node name="DwellersText" type="Sprite2D" parent="GameLayer/Write/Day2/Sprites"]
+visible = false
+position = Vector2(1597, 737)
+rotation = 0.0244311
+texture = ExtResource("49_me6mx")
+
+[node name="OnlyThanksText" type="Sprite2D" parent="GameLayer/Write/Day2/Sprites"]
+visible = false
+position = Vector2(1631, 787)
+rotation = 0.0244311
+texture = ExtResource("50_mhehf")
+
+[node name="InTheHandsText" type="Sprite2D" parent="GameLayer/Write/Day2/Sprites"]
+visible = false
+position = Vector2(1637, 838)
+rotation = 0.0244311
+texture = ExtResource("51_qtohh")
+
+[node name="KnowledgeText" type="Sprite2D" parent="GameLayer/Write/Day2/Sprites"]
+visible = false
+position = Vector2(1636, 900)
+rotation = 0.0244311
+texture = ExtResource("52_uhf7k")
+
+[node name="CheckBoxes" type="Node2D" parent="GameLayer/Write/Day2"]
+
+[node name="Choice1CheckBox" type="Sprite2D" parent="GameLayer/Write/Day2/CheckBoxes"]
+visible = false
+position = Vector2(1373, 537)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice1CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day2/CheckBoxes/Choice1CheckBox"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day2/CheckBoxes/Choice1CheckBox/Choice1CheckBoxArea"]
+shape = SubResource("CircleShape2D_sv6oh")
+
+[node name="Choice2CheckBox" type="Sprite2D" parent="GameLayer/Write/Day2/CheckBoxes"]
+visible = false
+position = Vector2(1373, 586)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice2CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day2/CheckBoxes/Choice2CheckBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day2/CheckBoxes/Choice2CheckBox/Choice2CheckBoxArea"]
+shape = SubResource("CircleShape2D_8wqis")
+
+[node name="Choice3CheckBox" type="Sprite2D" parent="GameLayer/Write/Day2/CheckBoxes"]
+visible = false
+position = Vector2(1373, 635)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice3CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day2/CheckBoxes/Choice3CheckBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day2/CheckBoxes/Choice3CheckBox/Choice3CheckBoxArea"]
+shape = SubResource("CircleShape2D_ixisc")
+
+[node name="Choice4CheckBox" type="Sprite2D" parent="GameLayer/Write/Day2/CheckBoxes"]
+visible = false
+position = Vector2(1373, 684)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice4CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day2/CheckBoxes/Choice4CheckBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day2/CheckBoxes/Choice4CheckBox/Choice4CheckBoxArea"]
+shape = SubResource("CircleShape2D_ojtxv")
+
+[node name="Choice5CheckBox" type="Sprite2D" parent="GameLayer/Write/Day2/CheckBoxes"]
+visible = false
+position = Vector2(1373, 733)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice5CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day2/CheckBoxes/Choice5CheckBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day2/CheckBoxes/Choice5CheckBox/Choice5CheckBoxArea"]
+shape = SubResource("CircleShape2D_eqtov")
+
+[node name="Choice6CheckBox" type="Sprite2D" parent="GameLayer/Write/Day2/CheckBoxes"]
+visible = false
+position = Vector2(1373, 782)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice6CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day2/CheckBoxes/Choice6CheckBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day2/CheckBoxes/Choice6CheckBox/Choice6CheckBoxArea"]
+shape = SubResource("CircleShape2D_h47se")
+
+[node name="Choice7CheckBox" type="Sprite2D" parent="GameLayer/Write/Day2/CheckBoxes"]
+visible = false
+position = Vector2(1373, 831)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice7CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day2/CheckBoxes/Choice7CheckBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day2/CheckBoxes/Choice7CheckBox/Choice7CheckBoxArea"]
+shape = SubResource("CircleShape2D_fdjod")
+
+[node name="Choice8CheckBox" type="Sprite2D" parent="GameLayer/Write/Day2/CheckBoxes"]
+visible = false
+position = Vector2(1373, 885)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice8CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day2/CheckBoxes/Choice8CheckBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day2/CheckBoxes/Choice8CheckBox/Choice8CheckBoxArea"]
+shape = SubResource("CircleShape2D_yobpr")
+
+[node name="YesSprite" type="Sprite2D" parent="GameLayer/Write/Day2"]
+visible = false
+position = Vector2(475, 228)
+texture = ExtResource("103_lhtd0")
+centered = false
+
+[node name="NoSprite" type="Sprite2D" parent="GameLayer/Write/Day2"]
+visible = false
+position = Vector2(475, 228)
+texture = ExtResource("104_tswrw")
+centered = false
+
+[node name="WriteArticle" type="Sprite2D" parent="GameLayer/Write/Day2"]
+visible = false
+position = Vector2(1610, 988)
+texture = ExtResource("82_iupp0")
+
+[node name="WriteArticleHover" type="Sprite2D" parent="GameLayer/Write/Day2/WriteArticle"]
+visible = false
+texture = ExtResource("83_aj3wb")
+
+[node name="WriteArticleArea" type="Area2D" parent="GameLayer/Write/Day2/WriteArticle"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day2/WriteArticle/WriteArticleArea"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_dlsnx")
+
+[node name="PublishArticle" type="Node2D" parent="GameLayer/Write/Day2"]
+visible = false
+position = Vector2(-4, 0)
+
+[node name="PublishArticleNormal" type="Sprite2D" parent="GameLayer/Write/Day2/PublishArticle"]
+position = Vector2(203, 992)
+texture = ExtResource("92_ojre0")
+
+[node name="PublishArticleHover" type="Sprite2D" parent="GameLayer/Write/Day2/PublishArticle"]
+visible = false
+position = Vector2(203, 1001)
+texture = ExtResource("93_xybae")
+
+[node name="PublishArticleArea" type="Area2D" parent="GameLayer/Write/Day2/PublishArticle"]
+position = Vector2(203, 992)
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day2/PublishArticle/PublishArticleArea"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_1vncs")
+
+[node name="Day3" type="Node2D" parent="GameLayer/Write" node_paths=PackedStringArray("FadeAnimationPlayer", "TextAndWhySprite", "TextWhatAReliefSprite", "TextThanksToMrOverseerSprite", "TextWhoIsBeingSprite", "TextLooksLikeSprite", "TextThisMustacheSprite", "TextMaybeOnlyMustachioedSprite", "TextWhatIsAPoliticianSprite", "Choice1CheckBoxSprite", "Choice2CheckBoxSprite", "Choice3CheckBoxSprite", "Choice4CheckBoxSprite", "Choice5CheckBoxSprite", "Choice6CheckBoxSprite", "Choice7CheckBoxSprite", "Choice8CheckBoxSprite", "WriteArticle", "WriteArticleHover", "YesSprite", "NoSprite", "PublishArticleNode2D", "PublishArticle", "PublishArticleHover", "Hearts")]
+visible = false
+script = ExtResource("105_dk65a")
+FadeAnimationPlayer = NodePath("../../../UpperGUI/Fade/AnimationPlayer")
+TextAndWhySprite = NodePath("Sprites/AndWhyDoText")
+TextWhatAReliefSprite = NodePath("Sprites/WhatAReliefText")
+TextThanksToMrOverseerSprite = NodePath("Sprites/ThanksToMrOverseerText")
+TextWhoIsBeingSprite = NodePath("Sprites/WhoIsBeingMonitoredText")
+TextLooksLikeSprite = NodePath("Sprites/LooksLikeMrBloodhoundText")
+TextThisMustacheSprite = NodePath("Sprites/ThisMustacheText")
+TextMaybeOnlyMustachioedSprite = NodePath("Sprites/MaybeOnlyMustachioedText")
+TextWhatIsAPoliticianSprite = NodePath("Sprites/WhatIsAPoliticianText")
+Choice1CheckBoxSprite = NodePath("CheckBoxes/Choice1CheckBox")
+Choice2CheckBoxSprite = NodePath("CheckBoxes/Choice2CheckBox")
+Choice3CheckBoxSprite = NodePath("CheckBoxes/Choice3CheckBox")
+Choice4CheckBoxSprite = NodePath("CheckBoxes/Choice4CheckBox")
+Choice5CheckBoxSprite = NodePath("CheckBoxes/Choice5CheckBox")
+Choice6CheckBoxSprite = NodePath("CheckBoxes/Choice6CheckBox")
+Choice7CheckBoxSprite = NodePath("CheckBoxes/Choice7CheckBox")
+Choice8CheckBoxSprite = NodePath("CheckBoxes/Choice8CheckBox")
+WriteArticle = NodePath("WriteArticle")
+WriteArticleHover = NodePath("WriteArticle/WriteArticleHover")
+YesSprite = NodePath("YesSprite")
+NoSprite = NodePath("NoSprite")
+PublishArticleNode2D = NodePath("PublishArticle")
+PublishArticle = NodePath("PublishArticle/PublishArticleNormal")
+PublishArticleHover = NodePath("PublishArticle/PublishArticleHover")
+Hearts = NodePath("../Hearts")
+
+[node name="Sprites" type="Node2D" parent="GameLayer/Write/Day3"]
+
+[node name="AndWhyDoText" type="Sprite2D" parent="GameLayer/Write/Day3/Sprites"]
+visible = false
+position = Vector2(1643, 542)
+rotation = 0.0244311
+texture = ExtResource("54_svvbd")
+
+[node name="WhatAReliefText" type="Sprite2D" parent="GameLayer/Write/Day3/Sprites"]
+visible = false
+position = Vector2(1644, 592)
+rotation = 0.0244311
+texture = ExtResource("55_a0sym")
+
+[node name="ThanksToMrOverseerText" type="Sprite2D" parent="GameLayer/Write/Day3/Sprites"]
+visible = false
+position = Vector2(1651, 641)
+rotation = 0.0244311
+texture = ExtResource("56_ix18k")
+
+[node name="WhoIsBeingMonitoredText" type="Sprite2D" parent="GameLayer/Write/Day3/Sprites"]
+visible = false
+position = Vector2(1646, 688)
+rotation = 0.0244311
+texture = ExtResource("57_i3ms5")
+
+[node name="LooksLikeMrBloodhoundText" type="Sprite2D" parent="GameLayer/Write/Day3/Sprites"]
+visible = false
+position = Vector2(1624, 736)
+rotation = 0.0244311
+texture = ExtResource("58_v73hx")
+
+[node name="ThisMustacheText" type="Sprite2D" parent="GameLayer/Write/Day3/Sprites"]
+visible = false
+position = Vector2(1645, 786)
+rotation = 0.0244311
+texture = ExtResource("59_8qlum")
+
+[node name="MaybeOnlyMustachioedText" type="Sprite2D" parent="GameLayer/Write/Day3/Sprites"]
+visible = false
+position = Vector2(1644, 837)
+rotation = 0.0244311
+texture = ExtResource("60_tjd65")
+
+[node name="WhatIsAPoliticianText" type="Sprite2D" parent="GameLayer/Write/Day3/Sprites"]
+visible = false
+position = Vector2(1607, 890)
+rotation = 0.0244311
+texture = ExtResource("61_2sqc1")
+
+[node name="CheckBoxes" type="Node2D" parent="GameLayer/Write/Day3"]
+
+[node name="Choice1CheckBox" type="Sprite2D" parent="GameLayer/Write/Day3/CheckBoxes"]
+visible = false
+position = Vector2(1373, 537)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice1CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day3/CheckBoxes/Choice1CheckBox"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day3/CheckBoxes/Choice1CheckBox/Choice1CheckBoxArea"]
+shape = SubResource("CircleShape2D_yfmbh")
+
+[node name="Choice2CheckBox" type="Sprite2D" parent="GameLayer/Write/Day3/CheckBoxes"]
+visible = false
+position = Vector2(1373, 586)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice2CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day3/CheckBoxes/Choice2CheckBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day3/CheckBoxes/Choice2CheckBox/Choice2CheckBoxArea"]
+shape = SubResource("CircleShape2D_4c2yp")
+
+[node name="Choice3CheckBox" type="Sprite2D" parent="GameLayer/Write/Day3/CheckBoxes"]
+visible = false
+position = Vector2(1373, 635)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice3CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day3/CheckBoxes/Choice3CheckBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day3/CheckBoxes/Choice3CheckBox/Choice3CheckBoxArea"]
+shape = SubResource("CircleShape2D_pdfs8")
+
+[node name="Choice4CheckBox" type="Sprite2D" parent="GameLayer/Write/Day3/CheckBoxes"]
+visible = false
+position = Vector2(1373, 684)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice4CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day3/CheckBoxes/Choice4CheckBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day3/CheckBoxes/Choice4CheckBox/Choice4CheckBoxArea"]
+shape = SubResource("CircleShape2D_oc0bu")
+
+[node name="Choice5CheckBox" type="Sprite2D" parent="GameLayer/Write/Day3/CheckBoxes"]
+visible = false
+position = Vector2(1373, 733)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice5CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day3/CheckBoxes/Choice5CheckBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day3/CheckBoxes/Choice5CheckBox/Choice5CheckBoxArea"]
+shape = SubResource("CircleShape2D_wymom")
+
+[node name="Choice6CheckBox" type="Sprite2D" parent="GameLayer/Write/Day3/CheckBoxes"]
+visible = false
+position = Vector2(1373, 782)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice6CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day3/CheckBoxes/Choice6CheckBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day3/CheckBoxes/Choice6CheckBox/Choice6CheckBoxArea"]
+shape = SubResource("CircleShape2D_aj55v")
+
+[node name="Choice7CheckBox" type="Sprite2D" parent="GameLayer/Write/Day3/CheckBoxes"]
+visible = false
+position = Vector2(1373, 831)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice7CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day3/CheckBoxes/Choice7CheckBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day3/CheckBoxes/Choice7CheckBox/Choice7CheckBoxArea"]
+shape = SubResource("CircleShape2D_eo0ih")
+
+[node name="Choice8CheckBox" type="Sprite2D" parent="GameLayer/Write/Day3/CheckBoxes"]
+visible = false
+position = Vector2(1373, 885)
+texture = ExtResource("77_l0tg7")
+
+[node name="Choice8CheckBoxArea" type="Area2D" parent="GameLayer/Write/Day3/CheckBoxes/Choice8CheckBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day3/CheckBoxes/Choice8CheckBox/Choice8CheckBoxArea"]
+shape = SubResource("CircleShape2D_qnpl5")
+
+[node name="YesSprite" type="Sprite2D" parent="GameLayer/Write/Day3"]
+visible = false
+position = Vector2(475, 228)
+texture = ExtResource("114_ygh7o")
+centered = false
+
+[node name="NoSprite" type="Sprite2D" parent="GameLayer/Write/Day3"]
+visible = false
+position = Vector2(475, 194)
+texture = ExtResource("115_jlsfn")
+centered = false
+
+[node name="WriteArticle" type="Sprite2D" parent="GameLayer/Write/Day3"]
+visible = false
+position = Vector2(1610, 988)
+texture = ExtResource("82_iupp0")
+
+[node name="WriteArticleHover" type="Sprite2D" parent="GameLayer/Write/Day3/WriteArticle"]
+visible = false
+texture = ExtResource("83_aj3wb")
+
+[node name="WriteArticleArea" type="Area2D" parent="GameLayer/Write/Day3/WriteArticle"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day3/WriteArticle/WriteArticleArea"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_obo5f")
+
+[node name="PublishArticle" type="Node2D" parent="GameLayer/Write/Day3"]
+visible = false
+position = Vector2(-4, 0)
+
+[node name="PublishArticleNormal" type="Sprite2D" parent="GameLayer/Write/Day3/PublishArticle"]
+position = Vector2(203, 992)
+texture = ExtResource("92_ojre0")
+
+[node name="PublishArticleHover" type="Sprite2D" parent="GameLayer/Write/Day3/PublishArticle"]
+visible = false
+position = Vector2(203, 1001)
+texture = ExtResource("93_xybae")
+
+[node name="PublishArticleArea" type="Area2D" parent="GameLayer/Write/Day3/PublishArticle"]
+position = Vector2(203, 992)
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Day3/PublishArticle/PublishArticleArea"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_qo4i1")
+
+[node name="Hearts" type="Node2D" parent="GameLayer/Write" node_paths=PackedStringArray("FadeAnimationPlayer", "Write", "HeartDay1", "HeartDay2", "HeartDay3", "NothingSprite", "NextButtonHover", "Day1YesSprite", "Day1NoSprite", "Day2YesSprite", "Day2NoSprite", "Day3YesSprite", "Day3NoSprite")]
+visible = false
+script = ExtResource("94_n7haq")
+FadeAnimationPlayer = NodePath("../../../UpperGUI/Fade/AnimationPlayer")
+Write = NodePath("..")
+HeartDay1 = NodePath("HeartDay1")
+HeartDay2 = NodePath("HeartDay2")
+HeartDay3 = NodePath("HeartDay3")
+NothingSprite = NodePath("Nothing")
+NextButtonHover = NodePath("NextButton/NextButtonHover")
+Day1YesSprite = NodePath("../Day1/YesSprite")
+Day1NoSprite = NodePath("../Day1/NoSprite")
+Day2YesSprite = NodePath("../Day2/YesSprite")
+Day2NoSprite = NodePath("../Day2/NoSprite")
+Day3YesSprite = NodePath("../Day3/YesSprite")
+Day3NoSprite = NodePath("../Day3/NoSprite")
+
+[node name="Bacground" type="Sprite2D" parent="GameLayer/Write/Hearts"]
+texture = ExtResource("95_vtgb4")
+centered = false
+
+[node name="Unanimity" type="Sprite2D" parent="GameLayer/Write/Hearts"]
+position = Vector2(960, 310)
+texture = ExtResource("121_8ptnl")
+
+[node name="Nothing" type="Sprite2D" parent="GameLayer/Write/Hearts"]
+visible = false
+position = Vector2(960, 760)
+texture = ExtResource("121_a6ncb")
+
+[node name="HeartDay1" type="AnimatedSprite2D" parent="GameLayer/Write/Hearts"]
+position = Vector2(460, 540)
+sprite_frames = SubResource("SpriteFrames_sr82a")
+animation = &"Empty"
+
+[node name="HeartDay2" type="AnimatedSprite2D" parent="GameLayer/Write/Hearts"]
+position = Vector2(960, 540)
+sprite_frames = SubResource("SpriteFrames_sr82a")
+animation = &"Empty"
+
+[node name="HeartDay3" type="AnimatedSprite2D" parent="GameLayer/Write/Hearts"]
+position = Vector2(1460, 540)
+sprite_frames = SubResource("SpriteFrames_sr82a")
+animation = &"Empty"
+
+[node name="NextButton" type="Sprite2D" parent="GameLayer/Write/Hearts"]
+position = Vector2(960, 990)
+texture = ExtResource("106_igh42")
+
+[node name="NextButtonHover" type="Sprite2D" parent="GameLayer/Write/Hearts/NextButton"]
+visible = false
+texture = ExtResource("107_e58fp")
+
+[node name="NextButtonArea" type="Area2D" parent="GameLayer/Write/Hearts/NextButton"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Write/Hearts/NextButton/NextButtonArea"]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_qmbnf")
+
+[node name="Notes" type="Node2D" parent="GameLayer" node_paths=PackedStringArray("Watch", "Read", "Listen", "Write", "Day1", "Day2", "Day3", "NotesAnimationPlayer")]
+visible = false
+z_index = 1
+position = Vector2(1076, 347)
+script = ExtResource("22_hknu8")
+Watch = NodePath("../Watch")
+Read = NodePath("../Read")
+Listen = NodePath("../Listen")
+Write = NodePath("../Write")
+Day1 = NodePath("Day1")
+Day2 = NodePath("Day2")
+Day3 = NodePath("Day3")
+NotesAnimationPlayer = NodePath("AnimationPlayer")
+
+[node name="Day1" type="Node2D" parent="GameLayer/Notes" node_paths=PackedStringArray("TextToysSprite", "TextInOutCountrySprite", "TextNotHungrySprite", "TextSalesmoreSprite", "TextNoOneSprite", "TextDidYouKnowSprite", "TextChildrenSprite", "TextEveryoneSprite")]
+visible = false
+position = Vector2(-1660, -347)
+script = ExtResource("22_kyihk")
+TextToysSprite = NodePath("ToysText")
+TextInOutCountrySprite = NodePath("InOurCountryText")
+TextNotHungrySprite = NodePath("NotHungryText")
+TextSalesmoreSprite = NodePath("SalesmoreText")
+TextNoOneSprite = NodePath("NoOneText")
+TextDidYouKnowSprite = NodePath("DidYouKnowText")
+TextChildrenSprite = NodePath("ChildrenText")
+TextEveryoneSprite = NodePath("EveryoneText")
+
+[node name="NotesSprite" type="Sprite2D" parent="GameLayer/Notes/Day1"]
+position = Vector2(1660, 347)
+texture = ExtResource("7_o7vce")
+centered = false
+
+[node name="ToysText" type="Sprite2D" parent="GameLayer/Notes/Day1"]
+visible = false
+position = Vector2(2211, 542)
+rotation = 0.0244311
+texture = ExtResource("8_nko77")
+
+[node name="InOurCountryText" type="Sprite2D" parent="GameLayer/Notes/Day1"]
+visible = false
+position = Vector2(2192, 592)
+rotation = 0.0244311
+texture = ExtResource("9_citmk")
+
+[node name="NotHungryText" type="Sprite2D" parent="GameLayer/Notes/Day1"]
+visible = false
+position = Vector2(2176, 638)
+rotation = 0.0244311
+texture = ExtResource("10_up6t6")
+
+[node name="SalesmoreText" type="Sprite2D" parent="GameLayer/Notes/Day1"]
+visible = false
+position = Vector2(2190, 688)
+rotation = 0.0244311
+texture = ExtResource("11_v40v3")
+
+[node name="NoOneText" type="Sprite2D" parent="GameLayer/Notes/Day1"]
+visible = false
+position = Vector2(2119, 736)
+rotation = 0.0244311
+texture = ExtResource("12_p7b6u")
+
+[node name="DidYouKnowText" type="Sprite2D" parent="GameLayer/Notes/Day1"]
+visible = false
+position = Vector2(2186, 786)
+rotation = 0.0244311
+texture = ExtResource("13_w5d68")
+
+[node name="ChildrenText" type="Sprite2D" parent="GameLayer/Notes/Day1"]
+visible = false
+position = Vector2(2204, 837)
+rotation = 0.0244311
+texture = ExtResource("14_vc4ja")
+
+[node name="EveryoneText" type="Sprite2D" parent="GameLayer/Notes/Day1"]
+visible = false
+position = Vector2(2175, 889)
+rotation = 0.0244311
+texture = ExtResource("15_vw8a2")
+
+[node name="Day2" type="Node2D" parent="GameLayer/Notes" node_paths=PackedStringArray("TextTheProtestersSprite", "TextPitchforksSprite", "TextOnlyTheDregsSprite", "TextPeopleHaveAlmostSprite", "TextDwellersSprite", "TextOnlyThanksSprite", "TextInTheHandsSprite", "TextKnowledgeSprite")]
+visible = false
+position = Vector2(-1660, -347)
+script = ExtResource("44_pkdv4")
+TextTheProtestersSprite = NodePath("TheProtestersText")
+TextPitchforksSprite = NodePath("PitchforksText")
+TextOnlyTheDregsSprite = NodePath("OnlyTheDregsText")
+TextPeopleHaveAlmostSprite = NodePath("PeopleHaveAlmostText")
+TextDwellersSprite = NodePath("DwellersText")
+TextOnlyThanksSprite = NodePath("OnlyThanksText")
+TextInTheHandsSprite = NodePath("InTheHandsText")
+TextKnowledgeSprite = NodePath("KnowledgeText")
+
+[node name="NotesSprite" type="Sprite2D" parent="GameLayer/Notes/Day2"]
+position = Vector2(1660, 347)
+texture = ExtResource("7_o7vce")
+centered = false
+
+[node name="TheProtestersText" type="Sprite2D" parent="GameLayer/Notes/Day2"]
+visible = false
+position = Vector2(2211, 542)
+rotation = 0.0244311
+texture = ExtResource("45_f7ibh")
+
+[node name="PitchforksText" type="Sprite2D" parent="GameLayer/Notes/Day2"]
+visible = false
+position = Vector2(2200, 592)
+rotation = 0.0244311
+texture = ExtResource("46_ng1qk")
+
+[node name="OnlyTheDregsText" type="Sprite2D" parent="GameLayer/Notes/Day2"]
+visible = false
+position = Vector2(2230, 638)
+rotation = 0.0244311
+texture = ExtResource("47_qhm67")
+
+[node name="PeopleHaveAlmostText" type="Sprite2D" parent="GameLayer/Notes/Day2"]
+visible = false
+position = Vector2(2204, 688)
+rotation = 0.0244311
+texture = ExtResource("48_c1ver")
+
+[node name="DwellersText" type="Sprite2D" parent="GameLayer/Notes/Day2"]
+visible = false
+position = Vector2(2181, 736)
+rotation = 0.0244311
+texture = ExtResource("49_me6mx")
+
+[node name="OnlyThanksText" type="Sprite2D" parent="GameLayer/Notes/Day2"]
+visible = false
+position = Vector2(2215, 786)
+rotation = 0.0244311
+texture = ExtResource("50_mhehf")
+
+[node name="InTheHandsText" type="Sprite2D" parent="GameLayer/Notes/Day2"]
+visible = false
+position = Vector2(2221, 837)
+rotation = 0.0244311
+texture = ExtResource("51_qtohh")
+
+[node name="KnowledgeText" type="Sprite2D" parent="GameLayer/Notes/Day2"]
+visible = false
+position = Vector2(2220, 899)
+rotation = 0.0244311
+texture = ExtResource("52_uhf7k")
+
+[node name="Day3" type="Node2D" parent="GameLayer/Notes" node_paths=PackedStringArray("TextAndWhySprite", "TextWhatAReliefSprite", "TextThanksToMrOverseerSprite", "TextWhoIsBeingSprite", "TextLooksLikeSprite", "TextThisMustacheSprite", "TextMaybeOnlyMustachioedSprite", "TextWhatIsAPoliticianSprite")]
+visible = false
+position = Vector2(-1660, -347)
+script = ExtResource("53_8q0ts")
+TextAndWhySprite = NodePath("AndWhyDoText")
+TextWhatAReliefSprite = NodePath("WhatAReliefText")
+TextThanksToMrOverseerSprite = NodePath("ThanksToMrOverseerText")
+TextWhoIsBeingSprite = NodePath("WhoIsBeingMonitoredText")
+TextLooksLikeSprite = NodePath("LooksLikeMrBloodhoundText")
+TextThisMustacheSprite = NodePath("ThisMustacheText")
+TextMaybeOnlyMustachioedSprite = NodePath("MaybeOnlyMustachioedText")
+TextWhatIsAPoliticianSprite = NodePath("WhatIsAPoliticianText")
+
+[node name="NotesSprite" type="Sprite2D" parent="GameLayer/Notes/Day3"]
+position = Vector2(1660, 347)
+texture = ExtResource("7_o7vce")
+centered = false
+
+[node name="AndWhyDoText" type="Sprite2D" parent="GameLayer/Notes/Day3"]
+visible = false
+position = Vector2(2222, 542)
+rotation = 0.0244311
+texture = ExtResource("54_svvbd")
+
+[node name="WhatAReliefText" type="Sprite2D" parent="GameLayer/Notes/Day3"]
+visible = false
+position = Vector2(2223, 592)
+rotation = 0.0244311
+texture = ExtResource("55_a0sym")
+
+[node name="ThanksToMrOverseerText" type="Sprite2D" parent="GameLayer/Notes/Day3"]
+visible = false
+position = Vector2(2230, 641)
+rotation = 0.0244311
+texture = ExtResource("56_ix18k")
+
+[node name="WhoIsBeingMonitoredText" type="Sprite2D" parent="GameLayer/Notes/Day3"]
+visible = false
+position = Vector2(2225, 688)
+rotation = 0.0244311
+texture = ExtResource("57_i3ms5")
+
+[node name="LooksLikeMrBloodhoundText" type="Sprite2D" parent="GameLayer/Notes/Day3"]
+visible = false
+position = Vector2(2203, 736)
+rotation = 0.0244311
+texture = ExtResource("58_v73hx")
+
+[node name="ThisMustacheText" type="Sprite2D" parent="GameLayer/Notes/Day3"]
+visible = false
+position = Vector2(2224, 786)
+rotation = 0.0244311
+texture = ExtResource("59_8qlum")
+
+[node name="MaybeOnlyMustachioedText" type="Sprite2D" parent="GameLayer/Notes/Day3"]
+visible = false
+position = Vector2(2223, 837)
+rotation = 0.0244311
+texture = ExtResource("60_tjd65")
+
+[node name="WhatIsAPoliticianText" type="Sprite2D" parent="GameLayer/Notes/Day3"]
+visible = false
+position = Vector2(2186, 890)
+rotation = 0.0244311
+texture = ExtResource("61_2sqc1")
+
+[node name="OpenCloseNotesArea" type="Area2D" parent="GameLayer/Notes"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/Notes/OpenCloseNotesArea"]
+position = Vector2(422, 366.5)
+shape = SubResource("RectangleShape2D_ekyos")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="GameLayer/Notes"]
+libraries = {
+"": SubResource("AnimationLibrary_b3xqe")
+}
+
+[node name="MouseArea" type="Area2D" parent="GameLayer"]
+metadata/IsMouse = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameLayer/MouseArea"]
+shape = SubResource("CircleShape2D_hwqyu")
+
+[node name="UpperGUI" type="CanvasLayer" parent="."]
+
+[node name="BackButton" type="TextureButton" parent="UpperGUI" node_paths=PackedStringArray("ReadScene", "ListenScene", "WatchScene", "WriteScene", "FadeAnimationPlayer")]
+visible = false
+anchors_preset = -1
+anchor_left = 0.003
+anchor_top = 0.9
+anchor_right = 0.058
+anchor_bottom = 0.995
+offset_left = -0.76
+offset_top = -6.10352e-05
+offset_right = 0.639999
+offset_bottom = 0.399902
+focus_mode = 0
+texture_normal = ExtResource("15_4nkep")
+texture_hover = ExtResource("16_4hsmw")
+script = ExtResource("16_g7mou")
+ReadScene = NodePath("../../GameLayer/Read")
+ListenScene = NodePath("../../GameLayer/Listen")
+WatchScene = NodePath("../../GameLayer/Watch")
+WriteScene = NodePath("../../GameLayer/Write")
+FadeAnimationPlayer = NodePath("../Fade/AnimationPlayer")
+
+[node name="YesNoButton" type="TextureButton" parent="UpperGUI" node_paths=PackedStringArray("FadeAnimationPlayer", "Watch", "Read", "Listen", "Write")]
+visible = false
+anchors_preset = -1
+anchor_left = 0.471
+anchor_top = 0.894
+anchor_right = 0.515
+anchor_bottom = 0.946
+offset_left = 9.67999
+offset_top = -0.520081
+offset_right = 10.1999
+offset_bottom = 0.319946
+texture_normal = ExtResource("108_bnf1l")
+texture_hover = ExtResource("109_nuaey")
+stretch_mode = 3
+script = ExtResource("100_77foc")
+FadeAnimationPlayer = NodePath("../Fade/AnimationPlayer")
+Watch = NodePath("../../GameLayer/Watch")
+Read = NodePath("../../GameLayer/Read")
+Listen = NodePath("../../GameLayer/Listen")
+Write = NodePath("../../GameLayer/Write")
+
+[node name="AreYouReady" type="Sprite2D" parent="UpperGUI/YesNoButton"]
+position = Vector2(-187, -116)
+texture = ExtResource("111_8r3kx")
+centered = false
+
+[node name="Day1" type="TextureRect" parent="UpperGUI"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("145_w5hx0")
+
+[node name="Day2" type="TextureRect" parent="UpperGUI"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("146_qcn4u")
+
+[node name="Day3" type="TextureRect" parent="UpperGUI"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("147_l8vfk")
+
+[node name="Fade" type="Node" parent="UpperGUI"]
+
+[node name="FadeColor" type="ColorRect" parent="UpperGUI/Fade"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="UpperGUI/Fade" node_paths=PackedStringArray("FadeColor")]
+root_node = NodePath("../../..")
+libraries = {
+"": SubResource("AnimationLibrary_8st3k")
+}
+script = ExtResource("19_tdtua")
+FadeColor = NodePath("../FadeColor")
+
+[connection signal="area_entered" from="GameLayer/Watch/Day1/Background/BoyHover/BoyArea" to="GameLayer/Watch/Day1" method="BoyAreaAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Watch/Day1/Background/BoyHover/BoyArea" to="GameLayer/Watch/Day1" method="BoyAreaAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Watch/Day1/Background/GirlHover/GirlArea" to="GameLayer/Watch/Day1" method="GirlAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Watch/Day1/Background/GirlHover/GirlArea" to="GameLayer/Watch/Day1" method="GirlAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Watch/Day1/Background/PosterHover/PosterArea" to="GameLayer/Watch/Day1" method="PosterAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Watch/Day1/Background/PosterHover/PosterArea" to="GameLayer/Watch/Day1" method="PosterAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Watch/Day1/Background/CarHover/CarArea" to="GameLayer/Watch/Day1" method="CarAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Watch/Day1/Background/CarHover/CarArea" to="GameLayer/Watch/Day1" method="CarAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Watch/Day2/Background/PosterHover/PosterArea" to="GameLayer/Watch/Day2" method="PosterGloryAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Watch/Day2/Background/PosterHover/PosterArea" to="GameLayer/Watch/Day2" method="PosterGloryAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Watch/Day2/Background/ForkHover/ForkArea" to="GameLayer/Watch/Day2" method="ForkAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Watch/Day2/Background/ForkHover/ForkArea" to="GameLayer/Watch/Day2" method="ForkAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Watch/Day2/Background/FaceHover/FaceArea" to="GameLayer/Watch/Day2" method="FaceAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Watch/Day2/Background/FaceHover/FaceArea" to="GameLayer/Watch/Day2" method="FaceAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Watch/Day2/Background/BloomHover/BloomArea" to="GameLayer/Watch/Day2" method="BloomAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Watch/Day2/Background/BloomHover/BloomArea" to="GameLayer/Watch/Day2" method="BloomAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Watch/Day3/Background/CloneHover/CloneArea" to="GameLayer/Watch/Day3" method="CloneAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Watch/Day3/Background/CloneHover/CloneArea" to="GameLayer/Watch/Day3" method="CloneAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Watch/Day3/Background/MustachoHover/MustachoArea" to="GameLayer/Watch/Day3" method="MustachoAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Watch/Day3/Background/MustachoHover/MustachoArea" to="GameLayer/Watch/Day3" method="MustachoAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Watch/Day3/Background/PoliticianHover/PoliticianArea" to="GameLayer/Watch/Day3" method="PoliticianAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Watch/Day3/Background/PoliticianHover/PoliticianArea" to="GameLayer/Watch/Day3" method="PoliticianAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Watch/UpLeftArea" to="GameLayer/Watch" method="UpLeftAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Watch/UpLeftArea" to="GameLayer/Watch" method="UpLeftAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Watch/UpRightArea" to="GameLayer/Watch" method="UpRightAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Watch/UpRightArea" to="GameLayer/Watch" method="UpRightAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Watch/DownLeftArea" to="GameLayer/Watch" method="DownLeftAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Watch/DownLeftArea" to="GameLayer/Watch" method="DownLeftAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Watch/DownRightArea" to="GameLayer/Watch" method="DownRightAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Watch/DownRightArea" to="GameLayer/Watch" method="DownRightAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Read/Day1/PictureArea" to="GameLayer/Read/Day1" method="PictureAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Read/Day1/PictureArea" to="GameLayer/Read/Day1" method="PictureAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Read/Day1/PriceArea" to="GameLayer/Read/Day1" method="PriceAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Read/Day1/PriceArea" to="GameLayer/Read/Day1" method="PriceAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Read/Day1/SalesmoreArea" to="GameLayer/Read/Day1" method="SalesmoreAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Read/Day1/SalesmoreArea" to="GameLayer/Read/Day1" method="SalesmoreAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Read/Day1/DistributiusArea" to="GameLayer/Read/Day1" method="DistributiusAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Read/Day1/DistributiusArea" to="GameLayer/Read/Day1" method="DistributiusAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Read/Day1/HungryArea" to="GameLayer/Read/Day1" method="HungryAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Read/Day1/HungryArea" to="GameLayer/Read/Day1" method="HungryAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Read/Day2/PictureArea" to="GameLayer/Read/Day2" method="PictureAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Read/Day2/PictureArea" to="GameLayer/Read/Day2" method="PictureAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Read/Day2/MrKnowledge" to="GameLayer/Read/Day2" method="MrKnowledgeAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Read/Day2/MrKnowledge" to="GameLayer/Read/Day2" method="MrKnowledgeAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Read/Day2/MrLawrule" to="GameLayer/Read/Day2" method="MrLawruleAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Read/Day2/MrLawrule" to="GameLayer/Read/Day2" method="MrLawruleAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Read/Day2/ArmedToTheTeeth" to="GameLayer/Read/Day2" method="ArmedToTheTeethAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Read/Day2/ArmedToTheTeeth" to="GameLayer/Read/Day2" method="ArmedToTheTeethAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Read/Day2/Slums" to="GameLayer/Read/Day2" method="SlumsAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Read/Day2/Slums" to="GameLayer/Read/Day2" method="SlumsAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Read/Day3/PictureArea" to="GameLayer/Read/Day3" method="PictureAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Read/Day3/PictureArea" to="GameLayer/Read/Day3" method="PictureAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Read/Day3/Sentences" to="GameLayer/Read/Day3" method="SentencesAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Read/Day3/Sentences" to="GameLayer/Read/Day3" method="SentencesAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Read/Day3/MrMustacheous" to="GameLayer/Read/Day3" method="MrMustacheousAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Read/Day3/MrMustacheous" to="GameLayer/Read/Day3" method="MrMustacheousAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Read/Day3/MrOverseer" to="GameLayer/Read/Day3" method="MrOverseerAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Read/Day3/MrOverseer" to="GameLayer/Read/Day3" method="MrOverseerAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Read/Day3/MinistryOfTruth" to="GameLayer/Read/Day3" method="MinistryAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Read/Day3/MinistryOfTruth" to="GameLayer/Read/Day3" method="MinistryAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Read/Day3/MrBloodhound" to="GameLayer/Read/Day3" method="MrBloodhoundAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Read/Day3/MrBloodhound" to="GameLayer/Read/Day3" method="MrBloodhoundAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Listen/Day1/Choise1/Choice1Area" to="GameLayer/Listen/Day1" method="Choice1AreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Listen/Day1/Choise1/Choice1Area" to="GameLayer/Listen/Day1" method="Choice1AreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Listen/Day1/Choise2/Choice2Area" to="GameLayer/Listen/Day1" method="Choice2AreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Listen/Day1/Choise2/Choice2Area" to="GameLayer/Listen/Day1" method="Choice2AreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Listen/Day1/Choise3/Choice3Area" to="GameLayer/Listen/Day1" method="Choice3AreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Listen/Day1/Choise3/Choice3Area" to="GameLayer/Listen/Day1" method="Choice3AreaMouseExited"]
+[connection signal="finished" from="GameLayer/Listen/Day1/Choice1Video" to="GameLayer/Listen/Day1" method="AfterVideoChoice1"]
+[connection signal="finished" from="GameLayer/Listen/Day1/Choice2Video" to="GameLayer/Listen/Day1" method="AfterVideoChoice2"]
+[connection signal="finished" from="GameLayer/Listen/Day1/Choice3Video" to="GameLayer/Listen/Day1" method="AfterVideoChoice3"]
+[connection signal="area_entered" from="GameLayer/Listen/Day2/Choise1/Choice1Area" to="GameLayer/Listen/Day2" method="Choice1AreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Listen/Day2/Choise1/Choice1Area" to="GameLayer/Listen/Day2" method="Choice1AreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Listen/Day2/Choise2/Choice2Area" to="GameLayer/Listen/Day2" method="Choice2AreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Listen/Day2/Choise2/Choice2Area" to="GameLayer/Listen/Day2" method="Choice2AreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Listen/Day2/Choise3/Choice3Area" to="GameLayer/Listen/Day2" method="Choice3AreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Listen/Day2/Choise3/Choice3Area" to="GameLayer/Listen/Day2" method="Choice3AreaMouseExited"]
+[connection signal="finished" from="GameLayer/Listen/Day2/Choice1Video" to="GameLayer/Listen/Day2" method="AfterVideoChoice1"]
+[connection signal="finished" from="GameLayer/Listen/Day2/Choice2Video" to="GameLayer/Listen/Day2" method="AfterVideoChoice2"]
+[connection signal="finished" from="GameLayer/Listen/Day2/Choice3Video" to="GameLayer/Listen/Day2" method="AfterVideoChoice3"]
+[connection signal="area_entered" from="GameLayer/Listen/Day3/Choise1/Choice1Area" to="GameLayer/Listen/Day3" method="Choice1AreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Listen/Day3/Choise1/Choice1Area" to="GameLayer/Listen/Day3" method="Choice1AreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Listen/Day3/Choise2/Choice2Area" to="GameLayer/Listen/Day3" method="Choice2AreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Listen/Day3/Choise2/Choice2Area" to="GameLayer/Listen/Day3" method="Choice2AreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Listen/Day3/Choise3/Choice3Area" to="GameLayer/Listen/Day3" method="Choice3AreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Listen/Day3/Choise3/Choice3Area" to="GameLayer/Listen/Day3" method="Choice3AreaMouseExited"]
+[connection signal="finished" from="GameLayer/Listen/Day3/Choice1Video" to="GameLayer/Listen/Day3" method="AfterVideoChoice1"]
+[connection signal="finished" from="GameLayer/Listen/Day3/Choice2Video" to="GameLayer/Listen/Day3" method="AfterVideoChoice2"]
+[connection signal="finished" from="GameLayer/Listen/Day3/Choice3Video" to="GameLayer/Listen/Day3" method="AfterVideoChoice3"]
+[connection signal="area_entered" from="GameLayer/Write/Day1/CheckBoxes/Choice1CheckBox/Choice1CheckBoxArea" to="GameLayer/Write/Day1" method="Choice1CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day1/CheckBoxes/Choice1CheckBox/Choice1CheckBoxArea" to="GameLayer/Write/Day1" method="Choice1CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day1/CheckBoxes/Choice2CheckBox/Choice2CheckBoxArea" to="GameLayer/Write/Day1" method="Choice2CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day1/CheckBoxes/Choice2CheckBox/Choice2CheckBoxArea" to="GameLayer/Write/Day1" method="Choice2CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day1/CheckBoxes/Choice3CheckBox/Choice3CheckBoxArea" to="GameLayer/Write/Day1" method="Choice3CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day1/CheckBoxes/Choice3CheckBox/Choice3CheckBoxArea" to="GameLayer/Write/Day1" method="Choice3CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day1/CheckBoxes/Choice4CheckBox/Choice4CheckBoxArea" to="GameLayer/Write/Day1" method="Choice4CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day1/CheckBoxes/Choice4CheckBox/Choice4CheckBoxArea" to="GameLayer/Write/Day1" method="Choice4CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day1/CheckBoxes/Choice5CheckBox/Choice5CheckBoxArea" to="GameLayer/Write/Day1" method="Choice5CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day1/CheckBoxes/Choice5CheckBox/Choice5CheckBoxArea" to="GameLayer/Write/Day1" method="Choice5CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day1/CheckBoxes/Choice6CheckBox/Choice6CheckBoxArea" to="GameLayer/Write/Day1" method="Choice6CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day1/CheckBoxes/Choice6CheckBox/Choice6CheckBoxArea" to="GameLayer/Write/Day1" method="Choice6CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day1/CheckBoxes/Choice7CheckBox/Choice7CheckBoxArea" to="GameLayer/Write/Day1" method="Choice7CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day1/CheckBoxes/Choice7CheckBox/Choice7CheckBoxArea" to="GameLayer/Write/Day1" method="Choice7CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day1/CheckBoxes/Choice8CheckBox/Choice8CheckBoxArea" to="GameLayer/Write/Day1" method="Choice8CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day1/CheckBoxes/Choice8CheckBox/Choice8CheckBoxArea" to="GameLayer/Write/Day1" method="Choice8CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day1/WriteArticle/WriteArticleArea" to="GameLayer/Write/Day1" method="WriteArticleAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day1/WriteArticle/WriteArticleArea" to="GameLayer/Write/Day1" method="WriteArticleAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day1/PublishArticle/PublishArticleArea" to="GameLayer/Write/Day1" method="PublishArticleAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day1/PublishArticle/PublishArticleArea" to="GameLayer/Write/Day1" method="PublishArticleAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day2/CheckBoxes/Choice1CheckBox/Choice1CheckBoxArea" to="GameLayer/Write/Day2" method="Choice1CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day2/CheckBoxes/Choice1CheckBox/Choice1CheckBoxArea" to="GameLayer/Write/Day2" method="Choice1CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day2/CheckBoxes/Choice2CheckBox/Choice2CheckBoxArea" to="GameLayer/Write/Day2" method="Choice2CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day2/CheckBoxes/Choice2CheckBox/Choice2CheckBoxArea" to="GameLayer/Write/Day2" method="Choice2CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day2/CheckBoxes/Choice3CheckBox/Choice3CheckBoxArea" to="GameLayer/Write/Day2" method="Choice3CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day2/CheckBoxes/Choice3CheckBox/Choice3CheckBoxArea" to="GameLayer/Write/Day2" method="Choice3CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day2/CheckBoxes/Choice4CheckBox/Choice4CheckBoxArea" to="GameLayer/Write/Day2" method="Choice4CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day2/CheckBoxes/Choice4CheckBox/Choice4CheckBoxArea" to="GameLayer/Write/Day2" method="Choice4CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day2/CheckBoxes/Choice5CheckBox/Choice5CheckBoxArea" to="GameLayer/Write/Day2" method="Choice5CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day2/CheckBoxes/Choice5CheckBox/Choice5CheckBoxArea" to="GameLayer/Write/Day2" method="Choice5CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day2/CheckBoxes/Choice6CheckBox/Choice6CheckBoxArea" to="GameLayer/Write/Day2" method="Choice6CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day2/CheckBoxes/Choice6CheckBox/Choice6CheckBoxArea" to="GameLayer/Write/Day2" method="Choice6CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day2/CheckBoxes/Choice7CheckBox/Choice7CheckBoxArea" to="GameLayer/Write/Day2" method="Choice7CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day2/CheckBoxes/Choice7CheckBox/Choice7CheckBoxArea" to="GameLayer/Write/Day2" method="Choice7CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day2/CheckBoxes/Choice8CheckBox/Choice8CheckBoxArea" to="GameLayer/Write/Day2" method="Choice8CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day2/CheckBoxes/Choice8CheckBox/Choice8CheckBoxArea" to="GameLayer/Write/Day2" method="Choice8CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day2/WriteArticle/WriteArticleArea" to="GameLayer/Write/Day2" method="WriteArticleAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day2/WriteArticle/WriteArticleArea" to="GameLayer/Write/Day2" method="WriteArticleAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day2/PublishArticle/PublishArticleArea" to="GameLayer/Write/Day2" method="PublishArticleAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day2/PublishArticle/PublishArticleArea" to="GameLayer/Write/Day2" method="PublishArticleAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day3/CheckBoxes/Choice1CheckBox/Choice1CheckBoxArea" to="GameLayer/Write/Day3" method="Choice1CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day3/CheckBoxes/Choice1CheckBox/Choice1CheckBoxArea" to="GameLayer/Write/Day3" method="Choice1CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day3/CheckBoxes/Choice2CheckBox/Choice2CheckBoxArea" to="GameLayer/Write/Day3" method="Choice2CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day3/CheckBoxes/Choice2CheckBox/Choice2CheckBoxArea" to="GameLayer/Write/Day3" method="Choice2CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day3/CheckBoxes/Choice3CheckBox/Choice3CheckBoxArea" to="GameLayer/Write/Day3" method="Choice3CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day3/CheckBoxes/Choice3CheckBox/Choice3CheckBoxArea" to="GameLayer/Write/Day3" method="Choice3CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day3/CheckBoxes/Choice4CheckBox/Choice4CheckBoxArea" to="GameLayer/Write/Day3" method="Choice4CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day3/CheckBoxes/Choice4CheckBox/Choice4CheckBoxArea" to="GameLayer/Write/Day3" method="Choice4CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day3/CheckBoxes/Choice5CheckBox/Choice5CheckBoxArea" to="GameLayer/Write/Day3" method="Choice5CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day3/CheckBoxes/Choice5CheckBox/Choice5CheckBoxArea" to="GameLayer/Write/Day3" method="Choice5CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day3/CheckBoxes/Choice6CheckBox/Choice6CheckBoxArea" to="GameLayer/Write/Day3" method="Choice6CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day3/CheckBoxes/Choice6CheckBox/Choice6CheckBoxArea" to="GameLayer/Write/Day3" method="Choice6CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day3/CheckBoxes/Choice7CheckBox/Choice7CheckBoxArea" to="GameLayer/Write/Day3" method="Choice7CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day3/CheckBoxes/Choice7CheckBox/Choice7CheckBoxArea" to="GameLayer/Write/Day3" method="Choice7CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day3/CheckBoxes/Choice8CheckBox/Choice8CheckBoxArea" to="GameLayer/Write/Day3" method="Choice8CheckBoxAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day3/CheckBoxes/Choice8CheckBox/Choice8CheckBoxArea" to="GameLayer/Write/Day3" method="Choice8CheckBoxAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day3/WriteArticle/WriteArticleArea" to="GameLayer/Write/Day3" method="WriteArticleAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day3/WriteArticle/WriteArticleArea" to="GameLayer/Write/Day3" method="WriteArticleAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Day3/PublishArticle/PublishArticleArea" to="GameLayer/Write/Day3" method="PublishArticleAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Day3/PublishArticle/PublishArticleArea" to="GameLayer/Write/Day3" method="PublishArticleAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Write/Hearts/NextButton/NextButtonArea" to="GameLayer/Write/Hearts" method="NextButtonAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Write/Hearts/NextButton/NextButtonArea" to="GameLayer/Write/Hearts" method="NextButtonAreaMouseExited"]
+[connection signal="area_entered" from="GameLayer/Notes/OpenCloseNotesArea" to="GameLayer/Notes" method="NotesOpenCloseAreaMouseEntered"]
+[connection signal="area_exited" from="GameLayer/Notes/OpenCloseNotesArea" to="GameLayer/Notes" method="NotesOpenCloseAreaMouseExited"]
+[connection signal="pressed" from="UpperGUI/BackButton" to="UpperGUI/BackButton" method="BackButtonPressed"]
+[connection signal="pressed" from="UpperGUI/YesNoButton" to="UpperGUI/YesNoButton" method="WriteButtonPressed"]

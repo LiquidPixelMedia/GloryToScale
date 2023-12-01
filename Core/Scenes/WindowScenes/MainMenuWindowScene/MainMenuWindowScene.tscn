@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cae54fdqcwc20"]
+
+[ext_resource type="PackedScene" uid="uid://1bbhd5opp2jv" path="res://Core/Scenes/WindowScenes/MainMenuWindowScene/MainMenuWindowSceneGUI.tscn" id="1_jld2u"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/MainMenuWindowSceneScripts/MainMenuWindowSceneScript.cs" id="1_phpvm"]
+
+[node name="MainMenuWindowScene" type="Node"]
+script = ExtResource("1_phpvm")
+
+[node name="GUILayer" type="CanvasLayer" parent="."]
+
+[node name="MainMenuWindowSceneGUI" parent="GUILayer" instance=ExtResource("1_jld2u")]

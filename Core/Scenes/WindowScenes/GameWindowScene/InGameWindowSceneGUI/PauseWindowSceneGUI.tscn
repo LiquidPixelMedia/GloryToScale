@@ -1,0 +1,210 @@
+[gd_scene load_steps=24 format=3 uid="uid://dvvegvc6t8ylx"]
+
+[ext_resource type="Texture2D" uid="uid://bqlf3cwfsxxlx" path="res://Core/Arts/Backgrounds/MainMenuScreen/Background.png" id="1_la3lj"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/InGameWindowScenes/PauseWindowSceneScripts/PauseWindowSceneScript.cs" id="1_nx5ct"]
+[ext_resource type="FontFile" uid="uid://biyy12gstr4mi" path="res://Core/Resources/Fonts/Lacquer-Regular.ttf" id="2_chi1c"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/InGameWindowScenes/PauseWindowSceneScripts/ResumeButtonScript.cs" id="3_r76hi"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/CommonScripts/FadeControlScript.cs" id="4_ycvfr"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/InGameWindowScenes/PauseWindowSceneScripts/PauseOptionsButtonScript.cs" id="5_f3lu5"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/InGameWindowScenes/PauseWindowSceneScripts/PauseBackButtonScript.cs" id="5_jj7t4"]
+[ext_resource type="PackedScene" uid="uid://f4m52p1k1ns5" path="res://Core/Scenes/WindowScenes/GameWindowScene/InGameWindowSceneGUI/OptionsWindowSceneGUI.tscn" id="7_jfgxc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i7iyi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tayjh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_abfip"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_roewl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cmpoc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kft3c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wulwe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4tk72"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tpnc8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pe73c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ptt0k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cyw7k"]
+
+[sub_resource type="Animation" id="Animation_dh748"]
+resource_name = "EmptyAnimation"
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_miwgf"]
+resource_name = "MainMenuAnimation"
+length = 1.5
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fade/FadeColor:color:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Fade/FadeColor:color:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Fade/FadeColor:color:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Fade/FadeColor:color:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8st3k"]
+_data = {
+"EmptyAnimation": SubResource("Animation_dh748"),
+"MainMenuAnimation": SubResource("Animation_miwgf")
+}
+
+[node name="PauseWindowSceneGUI" type="Control" node_paths=PackedStringArray("OptionsGUI", "FadeAnimationPlayer")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nx5ct")
+OptionsGUI = NodePath("OptionsWindowSceneGUI")
+FadeAnimationPlayer = NodePath("Fade/AnimationPlayer")
+
+[node name="Bacground" type="TextureRect" parent="."]
+modulate = Color(0.317647, 0.317647, 0.317647, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_la3lj")
+expand_mode = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RowContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 100
+alignment = 1
+
+[node name="PauseLabel" type="Label" parent="CenterContainer/RowContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_chi1c")
+theme_override_font_sizes/font_size = 150
+text = "PAUSE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ResumeButton" type="Button" parent="CenterContainer/RowContainer" node_paths=PackedStringArray("PauseGUI", "FadeAnimationPlayer")]
+layout_mode = 2
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.533333, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_chi1c")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i7iyi")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_tayjh")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_abfip")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_roewl")
+text = "RESUME"
+script = ExtResource("3_r76hi")
+PauseGUI = NodePath("../../..")
+FadeAnimationPlayer = NodePath("../../../Fade/AnimationPlayer")
+
+[node name="OptionsButton" type="Button" parent="CenterContainer/RowContainer" node_paths=PackedStringArray("OptionsGUI", "FadeAnimationPlayer")]
+layout_mode = 2
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.533333, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_chi1c")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cmpoc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_kft3c")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_wulwe")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4tk72")
+text = "OPTIONS"
+script = ExtResource("5_f3lu5")
+OptionsGUI = NodePath("../../../OptionsWindowSceneGUI")
+FadeAnimationPlayer = NodePath("../../../Fade/AnimationPlayer")
+
+[node name="BackToMenuButton" type="Button" parent="CenterContainer/RowContainer" node_paths=PackedStringArray("FadeAnimationPlayer")]
+layout_mode = 2
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.533333, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 0)
+theme_override_fonts/font = ExtResource("2_chi1c")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxEmpty_tpnc8")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_pe73c")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ptt0k")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cyw7k")
+text = "BACK TO MENU"
+script = ExtResource("5_jj7t4")
+FadeAnimationPlayer = NodePath("../../../Fade/AnimationPlayer")
+
+[node name="OptionsWindowSceneGUI" parent="." instance=ExtResource("7_jfgxc")]
+visible = false
+layout_mode = 1
+
+[node name="Fade" type="Node" parent="."]
+
+[node name="FadeColor" type="ColorRect" parent="Fade"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.301982)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fade" node_paths=PackedStringArray("FadeColor")]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_8st3k")
+}
+script = ExtResource("4_ycvfr")
+FadeColor = NodePath("../FadeColor")
+
+[connection signal="pressed" from="CenterContainer/RowContainer/ResumeButton" to="CenterContainer/RowContainer/ResumeButton" method="ResumeButtonPressed"]
+[connection signal="pressed" from="CenterContainer/RowContainer/OptionsButton" to="CenterContainer/RowContainer/OptionsButton" method="OptionsButtonPressed"]
+[connection signal="pressed" from="CenterContainer/RowContainer/BackToMenuButton" to="CenterContainer/RowContainer/BackToMenuButton" method="BackToMenuButtonPressed"]

@@ -1,0 +1,340 @@
+[gd_scene load_steps=25 format=3 uid="uid://xt0flynuxng5"]
+
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/GameWindowSceneScript.cs" id="1_76fh4"]
+[ext_resource type="Texture2D" uid="uid://b40lrwb4nonb4" path="res://Core/Arts/Backgrounds/GameScreen/Bacground.png" id="1_ey3jy"]
+[ext_resource type="Texture2D" uid="uid://cifm7r37ma28r" path="res://Core/Arts/Backgrounds/GameScreen/WatchNormal.png" id="2_fkc2b"]
+[ext_resource type="Texture2D" uid="uid://dkw73h3bhxcjv" path="res://Core/Arts/Backgrounds/GameScreen/PauseNormal.png" id="2_y6brj"]
+[ext_resource type="Texture2D" uid="uid://dwya2ixusp2go" path="res://Core/Arts/Backgrounds/GameScreen/PauseHover.png" id="3_75qr0"]
+[ext_resource type="Texture2D" uid="uid://tflqododbxmm" path="res://Core/Arts/Backgrounds/GameScreen/WatchHover.png" id="3_q42a7"]
+[ext_resource type="Texture2D" uid="uid://bhyhats27qu2r" path="res://Core/Arts/Backgrounds/GameScreen/ReadNormal.png" id="4_4b6r5"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/WatchButtonScript.cs" id="4_twr88"]
+[ext_resource type="Texture2D" uid="uid://bpwx0s08ceges" path="res://Core/Arts/Backgrounds/GameScreen/ReadHover.png" id="5_dmura"]
+[ext_resource type="Texture2D" uid="uid://dg3w7tkowl683" path="res://Core/Arts/Backgrounds/GameScreen/ListenNormal.png" id="6_rjbrh"]
+[ext_resource type="Texture2D" uid="uid://tektirwkpkxu" path="res://Core/Arts/Backgrounds/GameScreen/ListenHover.png" id="7_1rd52"]
+[ext_resource type="PackedScene" uid="uid://dvvegvc6t8ylx" path="res://Core/Scenes/WindowScenes/GameWindowScene/InGameWindowSceneGUI/PauseWindowSceneGUI.tscn" id="10_nyk0r"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/PauseButtonScript.cs" id="10_pdkrs"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/ReadButtonScript.cs" id="12_ov6pa"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/GameWindowSceneScripts/ListenButtonScript.cs" id="13_v5lvj"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/CommonScripts/FadeControlScript.cs" id="14_4od88"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8rtv1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rsdag"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fmn7j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_muj6l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qhu72"]
+
+[sub_resource type="Animation" id="Animation_dh748"]
+resource_name = "EmptyAnimation"
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_miwgf"]
+resource_name = "MainMenuAnimation"
+length = 1.5
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fade/FadeColor:color:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Fade/FadeColor:color:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Fade/FadeColor:color:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Fade/FadeColor:color:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8st3k"]
+_data = {
+"EmptyAnimation": SubResource("Animation_dh748"),
+"MainMenuAnimation": SubResource("Animation_miwgf")
+}
+
+[node name="GameWindowSceneGUI" type="Control" node_paths=PackedStringArray("PauseGUI", "FadeAnimationPlayer")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_76fh4")
+PauseGUI = NodePath("PauseWindowSceneGUI")
+FadeAnimationPlayer = NodePath("Fade/AnimationPlayer")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ey3jy")
+expand_mode = 1
+
+[node name="Hovers" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PauseNormal" type="TextureRect" parent="Hovers"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_y6brj")
+expand_mode = 1
+
+[node name="PauseHover" type="TextureRect" parent="Hovers"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_75qr0")
+expand_mode = 1
+
+[node name="WatchNormal" type="TextureRect" parent="Hovers"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_fkc2b")
+expand_mode = 1
+
+[node name="WatchHover" type="TextureRect" parent="Hovers"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_q42a7")
+expand_mode = 1
+
+[node name="ReadNormal" type="TextureRect" parent="Hovers"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_4b6r5")
+expand_mode = 1
+
+[node name="ReadHover" type="TextureRect" parent="Hovers"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_dmura")
+expand_mode = 1
+
+[node name="ListenNormal" type="TextureRect" parent="Hovers"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_rjbrh")
+expand_mode = 1
+
+[node name="ListenHover" type="TextureRect" parent="Hovers"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_1rd52")
+expand_mode = 1
+
+[node name="Buttons" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PauseButton" type="Button" parent="Buttons" node_paths=PackedStringArray("PauseScene", "PauseButtonNormal", "PauseButtonHover", "FadeAnimationPlayer")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.063
+anchor_top = 0.031
+anchor_right = 0.251
+anchor_bottom = 0.236
+offset_left = 0.0400009
+offset_top = 0.519997
+offset_right = -134.92
+offset_bottom = -134.88
+scale = Vector2(1.6, 2.56904)
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8rtv1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_rsdag")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fmn7j")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_muj6l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qhu72")
+script = ExtResource("10_pdkrs")
+PauseScene = NodePath("../../PauseWindowSceneGUI")
+PauseButtonNormal = NodePath("../../Hovers/PauseNormal")
+PauseButtonHover = NodePath("../../Hovers/PauseHover")
+FadeAnimationPlayer = NodePath("../../Fade/AnimationPlayer")
+
+[node name="WatchButton" type="Button" parent="Buttons" node_paths=PackedStringArray("WatchButtonNormal", "WatchButtonHover", "FadeAnimationPlayer")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.054
+anchor_top = 0.335
+anchor_right = 0.294
+anchor_bottom = 0.69
+offset_left = -0.68
+offset_top = 0.199982
+offset_right = -172.48
+offset_bottom = -234.2
+scale = Vector2(1.6, 2.56904)
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8rtv1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_rsdag")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fmn7j")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_muj6l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qhu72")
+script = ExtResource("4_twr88")
+WatchButtonNormal = NodePath("../../Hovers/WatchNormal")
+WatchButtonHover = NodePath("../../Hovers/WatchHover")
+FadeAnimationPlayer = NodePath("../../Fade/AnimationPlayer")
+
+[node name="ReadButton" type="Button" parent="Buttons" node_paths=PackedStringArray("ReadButtonNormal", "ReadButtonHover", "FadeAnimationPlayer")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.321
+anchor_top = 0.169
+anchor_right = 0.662
+anchor_bottom = 0.524
+offset_left = -0.320007
+offset_top = 0.47998
+offset_right = -246.04
+offset_bottom = -233.92
+scale = Vector2(1.6, 2.56904)
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8rtv1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_rsdag")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fmn7j")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_muj6l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qhu72")
+script = ExtResource("12_ov6pa")
+ReadButtonNormal = NodePath("../../Hovers/ReadNormal")
+ReadButtonHover = NodePath("../../Hovers/ReadHover")
+FadeAnimationPlayer = NodePath("../../Fade/AnimationPlayer")
+
+[node name="ListenButton" type="Button" parent="Buttons" node_paths=PackedStringArray("ListenButtonNormal", "ListenButtonHover", "FadeAnimationPlayer")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.697
+anchor_top = 0.331
+anchor_right = 0.925
+anchor_bottom = 0.692
+offset_left = -0.23999
+offset_top = -0.480042
+offset_right = -164.0
+offset_bottom = -238.36
+scale = Vector2(1.6, 2.56904)
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8rtv1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_rsdag")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fmn7j")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_muj6l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qhu72")
+script = ExtResource("13_v5lvj")
+ListenButtonNormal = NodePath("../../Hovers/ListenNormal")
+ListenButtonHover = NodePath("../../Hovers/ListenHover")
+FadeAnimationPlayer = NodePath("../../Fade/AnimationPlayer")
+
+[node name="PauseWindowSceneGUI" parent="." instance=ExtResource("10_nyk0r")]
+visible = false
+layout_mode = 1
+
+[node name="Fade" type="Node" parent="."]
+
+[node name="FadeColor" type="ColorRect" parent="Fade"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.301982)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fade" node_paths=PackedStringArray("FadeColor")]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_8st3k")
+}
+script = ExtResource("14_4od88")
+FadeColor = NodePath("../FadeColor")
+
+[connection signal="mouse_entered" from="Buttons/PauseButton" to="Buttons/PauseButton" method="PauseButtonMouseEntered"]
+[connection signal="mouse_exited" from="Buttons/PauseButton" to="Buttons/PauseButton" method="PauseButtonMouseExited"]
+[connection signal="pressed" from="Buttons/PauseButton" to="Buttons/PauseButton" method="PauseButtonPressed"]
+[connection signal="mouse_entered" from="Buttons/WatchButton" to="Buttons/WatchButton" method="WatchButtonMouseEntered"]
+[connection signal="mouse_exited" from="Buttons/WatchButton" to="Buttons/WatchButton" method="WatchButtonMouseExited"]
+[connection signal="pressed" from="Buttons/WatchButton" to="Buttons/WatchButton" method="WatchButtonPressed"]
+[connection signal="mouse_entered" from="Buttons/ReadButton" to="Buttons/ReadButton" method="ReadButtonMouseEntered"]
+[connection signal="mouse_exited" from="Buttons/ReadButton" to="Buttons/ReadButton" method="ReadButtonMouseExited"]
+[connection signal="pressed" from="Buttons/ReadButton" to="Buttons/ReadButton" method="ReadButtonPressed"]
+[connection signal="mouse_entered" from="Buttons/ListenButton" to="Buttons/ListenButton" method="ListenButtonMouseEntered"]
+[connection signal="mouse_exited" from="Buttons/ListenButton" to="Buttons/ListenButton" method="ListenButtonMouseExited"]
+[connection signal="pressed" from="Buttons/ListenButton" to="Buttons/ListenButton" method="ListenButtonPressed"]

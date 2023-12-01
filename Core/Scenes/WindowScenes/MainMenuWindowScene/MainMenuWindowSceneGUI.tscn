@@ -1,0 +1,329 @@
+[gd_scene load_steps=23 format=3 uid="uid://1bbhd5opp2jv"]
+
+[ext_resource type="Texture2D" uid="uid://bqlf3cwfsxxlx" path="res://Core/Arts/Backgrounds/MainMenuScreen/Background.png" id="1_njex3"]
+[ext_resource type="Texture2D" uid="uid://0aq5tmjghy0y" path="res://Core/Arts/Backgrounds/MainMenuScreen/StartNormal.png" id="2_j4aro"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/MainMenuWindowSceneScripts/StartButtonScript.cs" id="4_ew0gm"]
+[ext_resource type="Texture2D" uid="uid://duj3pw0rhobki" path="res://Core/Arts/Backgrounds/MainMenuScreen/StartHover.png" id="4_wt4n7"]
+[ext_resource type="Texture2D" uid="uid://b4cj4pta1ytoq" path="res://Core/Arts/Backgrounds/MainMenuScreen/OptionsNormal.png" id="5_ann4p"]
+[ext_resource type="Texture2D" uid="uid://c2g6vsbyimbi6" path="res://Core/Arts/Backgrounds/MainMenuScreen/OptionsHover.png" id="6_goqek"]
+[ext_resource type="Texture2D" uid="uid://dfcxahkbhrsl2" path="res://Core/Arts/Backgrounds/MainMenuScreen/CreditsNormal.png" id="6_q6uga"]
+[ext_resource type="Texture2D" uid="uid://caw6ofwh035vd" path="res://Core/Arts/Backgrounds/MainMenuScreen/CreditsHover.png" id="7_mbhao"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/MainMenuWindowSceneScripts/OptionsButtonScript.cs" id="7_y5ibm"]
+[ext_resource type="Texture2D" uid="uid://8imw3hv6e4xk" path="res://Core/Arts/Backgrounds/MainMenuScreen/ExitNormal.png" id="8_6yvqg"]
+[ext_resource type="Texture2D" uid="uid://dgxnjmwhccm8v" path="res://Core/Arts/Backgrounds/MainMenuScreen/ExitHover.png" id="9_lyrkv"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/MainMenuWindowSceneScripts/CreditsButtonScript.cs" id="12_7f0j6"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/MainMenuWindowSceneScripts/ExitButtonScript.cs" id="13_whpfc"]
+[ext_resource type="Script" path="res://Core/Scripts/WindowScripts/CommonScripts/FadeControlScript.cs" id="14_ldp35"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j188o"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dkqsg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1b2w7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ywjrk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dm500"]
+
+[sub_resource type="Animation" id="Animation_dh748"]
+resource_name = "EmptyAnimation"
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_miwgf"]
+resource_name = "MainMenuAnimation"
+length = 1.5
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fade/FadeColor:color:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Fade/FadeColor:color:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Fade/FadeColor:color:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Fade/FadeColor:color:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1.5)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8st3k"]
+_data = {
+"EmptyAnimation": SubResource("Animation_dh748"),
+"MainMenuAnimation": SubResource("Animation_miwgf")
+}
+
+[node name="MainMenuWindowSceneGUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Bacground" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_njex3")
+expand_mode = 1
+
+[node name="Hovers" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StartNormal" type="TextureRect" parent="Hovers"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_j4aro")
+expand_mode = 1
+
+[node name="StartHover" type="TextureRect" parent="Hovers"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_wt4n7")
+expand_mode = 1
+
+[node name="OptionsNormal" type="TextureRect" parent="Hovers"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_ann4p")
+expand_mode = 1
+
+[node name="OptionsHover" type="TextureRect" parent="Hovers"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_goqek")
+expand_mode = 1
+
+[node name="CreditsNormal" type="TextureRect" parent="Hovers"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_q6uga")
+expand_mode = 1
+
+[node name="CreditsHover" type="TextureRect" parent="Hovers"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_mbhao")
+expand_mode = 1
+
+[node name="ExitNormal" type="TextureRect" parent="Hovers"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_6yvqg")
+expand_mode = 1
+
+[node name="ExitHover" type="TextureRect" parent="Hovers"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_lyrkv")
+expand_mode = 1
+
+[node name="Buttons" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StartButton" type="Button" parent="Buttons" node_paths=PackedStringArray("StartButtonNormal", "StartButtonHover", "FadeAnimationPlayer")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.321
+anchor_top = 0.169
+anchor_right = 0.663
+anchor_bottom = 0.526
+offset_left = -0.320007
+offset_top = 0.47998
+offset_right = -245.96
+offset_bottom = -235.08
+scale = Vector2(1.6, 2.56904)
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_j188o")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dkqsg")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_1b2w7")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ywjrk")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dm500")
+script = ExtResource("4_ew0gm")
+StartButtonNormal = NodePath("../../Hovers/StartNormal")
+StartButtonHover = NodePath("../../Hovers/StartHover")
+FadeAnimationPlayer = NodePath("../../Fade/AnimationPlayer")
+
+[node name="OptionsButton" type="Button" parent="Buttons" node_paths=PackedStringArray("OptionsButtonNormal", "OptionsButtonHover", "FadeAnimationPlayer")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.042
+anchor_top = 0.33
+anchor_right = 0.301
+anchor_bottom = 0.696
+offset_left = 0.359993
+offset_top = -0.400024
+offset_right = -185.92
+offset_bottom = -241.68
+scale = Vector2(1.6, 2.56904)
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_j188o")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dkqsg")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_1b2w7")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ywjrk")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dm500")
+script = ExtResource("7_y5ibm")
+OptionsButtonNormal = NodePath("../../Hovers/OptionsNormal")
+OptionsButtonHover = NodePath("../../Hovers/OptionsHover")
+FadeAnimationPlayer = NodePath("../../Fade/AnimationPlayer")
+
+[node name="CreditsButton" type="Button" parent="Buttons" node_paths=PackedStringArray("CreditsButtonNormal", "CreditsButtonHover", "FadeAnimationPlayer")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.695
+anchor_top = 0.335
+anchor_right = 0.938
+anchor_bottom = 0.69
+offset_left = -0.400146
+offset_top = 0.199982
+offset_right = -174.96
+offset_bottom = -234.2
+scale = Vector2(1.6, 2.56904)
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_j188o")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dkqsg")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_1b2w7")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ywjrk")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dm500")
+script = ExtResource("12_7f0j6")
+CreditsButtonNormal = NodePath("../../Hovers/CreditsNormal")
+CreditsButtonHover = NodePath("../../Hovers/CreditsHover")
+FadeAnimationPlayer = NodePath("../../Fade/AnimationPlayer")
+
+[node name="ExitButton" type="Button" parent="Buttons" node_paths=PackedStringArray("ExitButtonNormal", "ExitButtonHover", "FadeAnimationPlayer")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.059
+anchor_top = 0.025
+anchor_right = 0.256
+anchor_bottom = 0.234
+offset_left = -0.280006
+offset_right = -141.52
+offset_bottom = -137.72
+scale = Vector2(1.6, 2.56904)
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_j188o")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dkqsg")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_1b2w7")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ywjrk")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dm500")
+script = ExtResource("13_whpfc")
+ExitButtonNormal = NodePath("../../Hovers/ExitNormal")
+ExitButtonHover = NodePath("../../Hovers/ExitHover")
+FadeAnimationPlayer = NodePath("../../Fade/AnimationPlayer")
+
+[node name="Fade" type="Node" parent="."]
+
+[node name="FadeColor" type="ColorRect" parent="Fade"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.301982)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fade" node_paths=PackedStringArray("FadeColor")]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_8st3k")
+}
+script = ExtResource("14_ldp35")
+FadeColor = NodePath("../FadeColor")
+
+[connection signal="mouse_entered" from="Buttons/StartButton" to="Buttons/StartButton" method="StartButtonMouseEntered"]
+[connection signal="mouse_exited" from="Buttons/StartButton" to="Buttons/StartButton" method="StartButtonMouseExited"]
+[connection signal="pressed" from="Buttons/StartButton" to="Buttons/StartButton" method="StartButtonPressed"]
+[connection signal="mouse_entered" from="Buttons/OptionsButton" to="Buttons/OptionsButton" method="OptionsButtonMouseEntered"]
+[connection signal="mouse_exited" from="Buttons/OptionsButton" to="Buttons/OptionsButton" method="OptionsButtonMouseExited"]
+[connection signal="pressed" from="Buttons/OptionsButton" to="Buttons/OptionsButton" method="OptionsButtonPressed"]
+[connection signal="mouse_entered" from="Buttons/CreditsButton" to="Buttons/CreditsButton" method="CreditsButtonMouseEntered"]
+[connection signal="mouse_exited" from="Buttons/CreditsButton" to="Buttons/CreditsButton" method="CreditsButtonMouseExited"]
+[connection signal="pressed" from="Buttons/CreditsButton" to="Buttons/CreditsButton" method="CreditsButtonPressed"]
+[connection signal="mouse_entered" from="Buttons/ExitButton" to="Buttons/ExitButton" method="ExitButtonMouseEntered"]
+[connection signal="mouse_exited" from="Buttons/ExitButton" to="Buttons/ExitButton" method="ExitButtonMouseExited"]
+[connection signal="pressed" from="Buttons/ExitButton" to="Buttons/ExitButton" method="ExitButtonPressed"]

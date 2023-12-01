@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdmjxiqnfslpa"]
+
+[ext_resource type="PackedScene" uid="uid://c15dspipds7wi" path="res://Core/Scenes/WindowScenes/EndGameWindowScene/EndGameWindowSceneGUI.tscn" id="1_dm21a"]
+
+[node name="EndGameWindowScene" type="Node"]
+
+[node name="GUILayer" type="CanvasLayer" parent="."]
+
+[node name="EndGameWindowSceneGUI" parent="GUILayer" instance=ExtResource("1_dm21a")]
